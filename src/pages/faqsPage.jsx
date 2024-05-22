@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function FaqsPages() {
+export default function FaqsPage() {
   return (
     <div>
-        <h3>FaqsPages</h3>
+        <h3>FaqsPage</h3>
     </div>
   )
 }

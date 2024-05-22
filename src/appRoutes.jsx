@@ -1,8 +1,9 @@
 import React from 'react'
 import { Route, Routes, BrowserRouter as Router } from 'react-router-dom'
 import SearchPage from './pages/searchPage'
-import FaqsPages from './pages/faqsPages'
+import FaqsPage from './pages/faqsPage'
 import AppLayoutPage from './pages/appLayoutPage'
+
 
 export default function AppRoutes() {
   return (
@@ -10,7 +11,7 @@ export default function AppRoutes() {
       <Routes>
         <Route path='/' element={<AppLayoutPage/>}>
           <Route path='/search' element={<SearchPage/>}/>
-          <Route path='/faqs' element={<FaqsPages/>}/>
+          <Route path='/faqs' element={<FaqsPage/>}/>
         </Route>
       </Routes>
     </Router>
