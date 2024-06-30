@@ -8,9 +8,15 @@
 
      "SubheadingShipmentTracking": "מידע עדכני על משלוחים אשר נשלחו מחו”ל במשלוח ימי/ אווירי/ יבשתי",
 
-    "highlightedSubheadingShipmentTracking":"בעת הזנת מספר חבילה/ מטען יוצגו נתונים אודות המטען וסטאטוס הטיפול מול המכס/ רשות מסמכת."
+    "highlightedSubheadingShipmentTracking":"בעת הזנת מספר חבילה/ מטען יוצגו נתונים אודות המטען וסטאטוס הטיפול מול המכס/ רשות מסמכת.",
 
      
+    "searchTimeTitle": "המידע עדכני לתאריך: ",
+    "caringFactor":" גורם מטפל",
+    "orBySite": "או באתר:",
+    "taxesPaymentTilte": "תשלום מיסים",
+    "payImportTaxes":"מעבר לתשלום מיסי היבוא",
+    "apealImportTaxes":"ערעור על תשלום מיסים"
 
 
 }

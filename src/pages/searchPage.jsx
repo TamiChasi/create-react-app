@@ -9,13 +9,13 @@ export default function SearchPage() {
 
   function getPackegeData() {
     var data = require('../data/mockData.json');
-    return data[0];
+    return {...data[0],"contactPhone":"180080080", "contactSite":"www.israelpost.co.il"}
   }
 
   return (
     <div>
       <h2>SearchPage</h2>
-      <packageContext.Provider value={packageData}>
+      <packageContext.Provider value={{packageData, searchTime: new Date()}}>
         <PackageSearch></PackageSearch>
         <PackageInfo></PackageInfo>
       </packageContext.Provider>

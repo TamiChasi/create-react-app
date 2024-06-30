@@ -6,5 +6,11 @@
 
     "shippingTrackingTitle": "Shipment tracking - Customs Department",
 
-    "shipmentTrackingSecondaryTitle":"Current information on shipments sent from abroad by sea/air/land delivery"
+    "shipmentTrackingSecondaryTitle":"Current information on shipments sent from abroad by sea/air/land delivery",
+    "searchTimeTitle": "The Information is update for",
+    "caringFactor": "Caring factor",
+    "orBySite": "Or By Site:",
+    "taxesPaymentTilte": "",
+    "payImportTaxes":"pay import taxes",
+    "apealImportTaxes":"apeal on payment of taxes"
 }
