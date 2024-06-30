@@ -2,6 +2,15 @@
     "welcome": "ברוכים הבאים לאפליקציה!",
     "test" : "בדיקה",
 
-    "packageDetailsTilte": "מידע על פריט "
+    "packageDetailsTilte": "מידע על פריט ",
+
+     "shippingTrackingTitle": "מעקב משלוחים - אגף המכס",
+
+     "SubheadingShipmentTracking": "מידע עדכני על משלוחים אשר נשלחו מחו”ל במשלוח ימי/ אווירי/ יבשתי",
+
+    "highlightedSubheadingShipmentTracking":"בעת הזנת מספר חבילה/ מטען יוצגו נתונים אודות המטען וסטאטוס הטיפול מול המכס/ רשות מסמכת."
+
+     
+
 
 }

@@ -2,5 +2,9 @@
     "welcome": "Welcome to my app!",
     "test" : "this is test",
 
-    "packageDetailsTilte": "Information for package num. "
+    "packageDetailsTilte": "Information for package num. ",
+
+    "shippingTrackingTitle": "Shipment tracking - Customs Department",
+
+    "shipmentTrackingSecondaryTitle":"Current information on shipments sent from abroad by sea/air/land delivery"
 }
