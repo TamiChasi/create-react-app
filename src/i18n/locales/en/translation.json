@@ -2,5 +2,11 @@
     "welcome": "Welcome to my app!",
     "test" : "this is test",
 
-    "packageDetailsTilte": "Information for package num. "
+    "packageDetailsTilte": "Information for package num. ",
+    "searchTimeTitle": "The Information is update for",
+    "caringFactor": "Caring factor",
+    "orBySite": "Or By Site:",
+    "taxesPaymentTilte": "",
+    "payImportTaxes":"pay import taxes",
+    "apealImportTaxes":"apeal on payment of taxes"
 }
