@@ -1,0 +1,15 @@
+.contactDetails{
+    text-align: right;
+    direction: rtl;
+    color: rgba(12, 48, 88, 1);
+    
+}
+
+
+.contactDetails h3{
+    margin-bottom: unset;
+ }
+
+ .contactDetails p{
+    margin: unset;
+ }

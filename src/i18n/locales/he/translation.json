@@ -2,6 +2,13 @@
     "welcome": "ברוכים הבאים לאפליקציה!",
     "test" : "בדיקה",
 
-    "packageDetailsTilte": "מידע על פריט "
+    "packageDetailsTilte": "מידע על פריט ",
+    "searchTimeTitle": "המידע עדכני לתאריך: ",
+    "caringFactor":" גורם מטפל",
+    "orBySite": "או באתר:",
+    "taxesPaymentTilte": "תשלום מיסים",
+    "payImportTaxes":"מעבר לתשלום מיסי היבוא",
+    "apealImportTaxes":"ערעור על תשלום מיסים"
+
 
 }
