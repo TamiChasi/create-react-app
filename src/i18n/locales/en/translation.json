@@ -8,5 +8,9 @@
     "orBySite": "Or By Site:",
     "taxesPaymentTilte": "",
     "payImportTaxes":"pay import taxes",
-    "apealImportTaxes":"apeal on payment of taxes"
+    "apealImportTaxes":"apeal on payment of taxes",
+    "packageTimelineTilte": "",
+    "packageStatusQuestion":"",
+    "packageStatusTitle":"the status of the item"
+
 }

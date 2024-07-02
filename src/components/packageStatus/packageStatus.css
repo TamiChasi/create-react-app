@@ -1,0 +1,17 @@
+.packageStatus .MuiBox-root{
+    background-color: rgba(242, 246, 252, 1);
+    height: 100px;
+    width: 300px;
+    border-radius: 5px;
+    justify-content:center;
+    align-items: center;
+
+}
+.packageStatus {
+    width: 45%;
+    color: rgba(12, 48, 88, 1);
+    text-align: right;
+    direction: rtl;
+    margin-right: 20px
+
+}
