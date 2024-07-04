@@ -9,7 +9,14 @@
      "SubheadingShipmentTracking": "מידע עדכני על משלוחים אשר נשלחו מחו”ל במשלוח ימי/ אווירי/ יבשתי",
 
     "highlightedSubheadingShipmentTracking":"בעת הזנת מספר חבילה/ מטען יוצגו נתונים אודות המטען וסטאטוס הטיפול מול המכס/ רשות מסמכת.",
+     
+    "Search":"חיפוש",
 
+    "HereYouWriteTrackingTax":"כאן כותבים מס מעקב",
+
+    "TitleInput": "מספר מעקב",
+
+    "trackingNumberNotFound": "מספר מעקב לא נמצא",
      
     "searchTimeTitle": "המידע עדכני לתאריך: ",
     "caringFactor":" גורם מטפל",
