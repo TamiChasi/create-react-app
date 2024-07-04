@@ -2,6 +2,7 @@ import React ,{useContext} from 'react'
 import { packageContext } from '../../context/packageContext'
 import { useTranslation } from 'react-i18next'
 import './contactDetails.css'
+import { Link } from '@mui/material'
 
 
 export default function ContactDetails() {
@@ -15,7 +16,7 @@ export default function ContactDetails() {
       <p>{packageData.contactDetails}</p>
       <p>{packageData.contactPhone}</p>
       <p>{t ("orBySite")}</p>
-      <p>{packageData.contactSite}</p>
+      <p><Link href={packageData.contactSite}>{packageData.contactSite}</Link></p>
     </div>
   )
 }
