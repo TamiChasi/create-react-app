@@ -23,7 +23,8 @@
     "orBySite": "או באתר:",
     "taxesPaymentTilte": "תשלום מיסים",
     "payImportTaxes":"מעבר לתשלום מיסי היבוא",
-    "apealImportTaxes":"ערעור על תשלום מיסים"
-
-
+    "apealImportTaxes":"ערעור על תשלום מיסים",
+    "packageTimelineTilte": "שלבי הטיפול בפריט",
+    "packageStatusQuestion":"האם ממתין לטיפול המכס או לגורמים אחרים?",
+    "packageStatusTitle":"סטטוס הפריט"
 }
