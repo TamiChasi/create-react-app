@@ -10,6 +10,7 @@ import { TimelineOppositeContent } from '@mui/lab';
 import TimelineContent, { timelineContentClasses } from '@mui/lab/TimelineContent';
 import './packageTimeline.css'
 import { useTranslation } from 'react-i18next';
+import PackageIcon from '../../icons/packageIcon';
 
 
 
@@ -38,7 +39,7 @@ export default function PackageTimeline() {
             </TimelineOppositeContent>
             <TimelineSeparator >
               <TimelineDot>
-                <FastfoodIcon />
+                <PackageIcon />
               </TimelineDot>
               <TimelineConnector />
             </TimelineSeparator>

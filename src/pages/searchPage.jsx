@@ -9,7 +9,7 @@ export default function SearchPage() {
 
   function getPackegeData() {
     var data = require('../data/mockData.json');
-    return {...data[0],"contactPhone":"180080080", "contactSite":"www.israelpost.co.il"}
+    return {...data[0],"contactPhone":"180080080", "contactSite":"https://israelpost.co.il"}
   }
 
   return (

@@ -14,16 +14,17 @@ export default function PackageInfo() {
     <Container className='packageInfo'>
       <PackageDetails></PackageDetails>
       <Box>
-      <ContactDetails></ContactDetails>
-      <Divider orientation="vertical" variant="middle" flexItem />
-      <TaxesPayment></TaxesPayment>
+        <ContactDetails></ContactDetails>
+        <Divider orientation="vertical" variant="middle" flexItem />
+        <TaxesPayment></TaxesPayment>
       </Box>
-      <Divider component="div"/>
-<Box>
-      <PackageTimeline></PackageTimeline>
-      <Divider orientation="vertical" variant="middle" flexItem />
-
-      <PackageStatus></PackageStatus>
+      <br />
+      <Divider component="div" />
+      <br />
+      <Box>
+        <PackageTimeline></PackageTimeline>
+        <Divider orientation="vertical" variant="middle" flexItem />
+        <PackageStatus></PackageStatus>
       </Box>
     </Container>
   )
