@@ -5,7 +5,7 @@ import { packageContext } from '../context/packageContext'
 
 export default function SearchPage() {
 
-  let [packageData, setPackageData] = useState(null)
+  let [packageData, setPackageData] = useState(getPackegeData())
 
   function getPackegeData() {
     var data = require('../data/mockData.json');
