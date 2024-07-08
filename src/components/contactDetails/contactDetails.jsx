@@ -5,10 +5,12 @@ import './contactDetails.css'
 import { Link } from '@mui/material'
 
 
-export default function ContactDetails() {
+
+export default function ContactDetails({ details }) {
 
   const {t} = useTranslation()
   let {packageData, searchTime} = useContext(packageContext);
+
 
   return (
     <div className='contactDetails'>

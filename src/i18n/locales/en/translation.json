@@ -3,6 +3,21 @@
     "test" : "this is test",
 
     "packageDetailsTilte": "Information for package num. ",
+
+    "shippingTrackingTitle": "Shipment tracking - Customs Department",
+
+    "shipmentTrackingSecondaryTitle":"Current information on shipments sent from abroad by sea/air/land delivery",
+
+    "highlightedSubheadingShipmentTracking":"When entering a package/cargo number, data will be displayed about the cargo and the handling status with the customs/certifying authority.",
+     
+    "Search":"Search",
+
+    "HereYouWriteTrackingTax":"Here you write tracking tax",
+
+    "TitleInput": "tracking tax",
+
+
+    
     "searchTimeTitle": "The Information is update for",
     "caringFactor": "Caring factor",
     "orBySite": "Or By Site:",

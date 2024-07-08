@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
-import PackageSearch from '../components/packageSearch'
+import PackageSearch from '../components/packageSearch/packageSearch'
 import PackageInfo from '../components/packageInfo/packageInfo'
 import { packageContext } from '../context/packageContext'
 
 export default function SearchPage() {
 
-  let [packageData, setPackageData] = useState(getPackegeData()) 
+  let [packageData, setPackageData] = useState(null)
 
   function getPackegeData() {
     var data = require('../data/mockData.json');
