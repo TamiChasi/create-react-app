@@ -14,7 +14,6 @@ export default function SearchPage() {
 
   return (
     <div>
-      <h2>SearchPage</h2>
       <packageContext.Provider value={{packageData, searchTime: new Date()}}>
         <PackageSearch></PackageSearch>
         <PackageInfo></PackageInfo>

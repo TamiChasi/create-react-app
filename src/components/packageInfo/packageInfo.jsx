@@ -17,7 +17,6 @@ export default function PackageInfo() {
 
   return (
     <Container className='packageInfo'  style={{ display: packageData ? 'block' : 'none' }}>
-
       <PackageDetails></PackageDetails>
       <Box>
         <ContactDetails></ContactDetails>
