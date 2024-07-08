@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import PackageDetails from '../packageDetails/packageDetails'
 import PackageStatus from '../packageStatus/packageStatus'
 import PackageTimeline from '../packageTimeline/packageTimeline'
@@ -8,10 +8,15 @@ import TaxesPayment from '../taxesPayment/taxesPayment'
 import ContactDetails from '../contactDetails/contactDetails'
 import Divider from '@mui/material/Divider';
 import Box from '@mui/material/Box';
+import { packageContext } from '../../context/packageContext'
 
 export default function PackageInfo() {
+
+  const { packageData } = useContext(packageContext);
+
+
   return (
-    <Container className='packageInfo'>
+    <Container className='packageInfo'  style={{ display: packageData ? 'block' : 'none' }}>
       <PackageDetails></PackageDetails>
       <Box>
         <ContactDetails></ContactDetails>

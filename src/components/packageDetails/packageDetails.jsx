@@ -11,8 +11,8 @@ export default function PackageDetails() {
 
   return (
     <div className='packageDetails'>
-      <h2>{t ("packageDetailsTilte")} {packageData.declerationNumber}</h2>
-      <p>{t ("searchTimeTitle")} {searchTime.toLocaleString()} </p>
+      <h2>{t ("packageDetailsTilte")} {packageData?.declerationNumber}</h2>
+      <p>{t ("searchTimeTitle")} {searchTime?.toLocaleString()} </p>
       <br></br>
     </div>
   )

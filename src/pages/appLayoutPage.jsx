@@ -9,7 +9,6 @@ export default function AppLayoutPage() {
 
   return (
     <div>
-      <h1>{ t ("welcome") }</h1>
         <Outlet/>
         <LinksEria></LinksEria>
     </div>
