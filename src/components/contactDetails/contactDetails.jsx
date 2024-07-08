@@ -15,10 +15,10 @@ export default function ContactDetails({ details }) {
   return (
     <div className='contactDetails'>
       <h3>{t ("caringFactor")}</h3>
-      <p>{packageData.contactDetails}</p>
-      <p>{packageData.contactPhone}</p>
+      <p>{packageData?.contactDetails}</p>
+      <p>{packageData?.contactPhone}</p>
       <p>{t ("orBySite")}</p>
-      <p><Link href={packageData.contactSite}>{packageData.contactSite}</Link></p>
+      <p><Link href={packageData?.contactSite}>{packageData?.contactSite}</Link></p>
     </div>
   )
 }

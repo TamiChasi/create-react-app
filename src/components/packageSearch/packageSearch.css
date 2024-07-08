@@ -7,96 +7,66 @@
   color: #0c3058;
 }
 
-#SubheadingShipmentTracking {
+#subheadingShipmentTracking {
   font-family: Rubik;
   font-size: 18px;
   font-weight: 500;
   line-height: 21.6px;
   text-align: center;
   color: #707070;
-  margin-bottom: 16px; /* מרווח תחתון בין כותרות */
+  margin-bottom: 16px; 
+}
+
+#subheadingShipmentTrackingB{
+font-family: Rubik;
+font-size: 18px;
+font-weight: 500;
+line-height: 24px;
+text-align: center;
 }
 
 
 
-.input-container {
-  display: flex; /* יישום שיטת פלקסבוקס לאינפוט ולכפתור */
-  align-items: center; /* מרכז את האלמנטים אנכית */
-  margin-bottom: 20px; /* מרווח תחתון */
+#outlined-basic{
+width: 530px;
+Height: 40px;
+} 
+
+#onclickSearch{
+ width: 138px;
+  Height: 40px;
+ } 
+
+ .searchDiv{
+  background-color:#DEEEFA;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-.input-field {
-  flex: 1; /* כדי למלא את השטח עם הכפתור בצורה תקנית  */
-  padding: 10px;
-  font-size: 16px;
-  box-sizing: border-box;
-  margin-right: 10px; /* מרווח מימין בין האינפוט לכפתור */
+.icon-search-container{
+display: block;
 }
 
-.search-button {
-  padding: 12px 24px;
-  border: none;
-  border-radius: 4px;
-  background-color: #007bff;
-  color: white;
-  font-size: 14px;
-  cursor: pointer;
-  transition: background-color 0.3s ease; /* אנימציה לצבע הרקע */
-  margin-right: 10px; /* מרווח מימין */
-  align-self: flex-start; /* מיקוד הכפתור לצד שמאל של הקונטיינר */
-}
+.icon-search-container svg{
+  position:sticky; 
+  }
 
-.search-button:hover {
-  background-color: #0056b3;
-}
-
-.form-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.label {
-  position: absolute;
-  top: -20px;
-  left: 0;
-  font-size: 12px;
-  color: #555;
-  opacity: 0; /* בהתחלה לא מוצג */
-  transition: opacity 0.2s ease-in-out; /* אנימציה למראה והסתרה */
-}
-
-.input-field {
-  width: 530px;
-  height: 40px;
-  top: 476px;
-  left: 533px;
-  gap: 0px;
-  border-radius: 5px 0px 0px 0px;
-  border: 1px 0px 0px 0px;
-  opacity: 0px;
-  background: #FFFFFF;
-  border: 1px solid #2B5287  
-}
-
-.input-field.not-empty + .label {
-  opacity: 1; /* מוצג כאשר יש טקסט בשדה */
-}
-
-.search-button {
-  width: 138px;
-  height: 40px;
-  top: 476px;
-  left: 377px;
-  gap: 0px;
-  border-radius: 6px 0px 0px 0px;
-  opacity: 0px;
+  .searchDiv {
   
-}
-
-
-
-
-.search-button:hover {
-  background-color: #0056b3;
-}
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .iconContainer {
+    position: relative;
+   
+  }
+  
+  .icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }

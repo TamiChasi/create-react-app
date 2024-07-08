@@ -15,7 +15,7 @@ export default function PackageStatus() {
       <h4>{t("packageStatusQuestion")}</h4>
 
       <Box >
-        {packageData.status}
+        {packageData?.status}
       </Box>
 
     </div>
