@@ -1,7 +1,9 @@
+import '../icons/bookIcon'
+
 export const link_Data=
 [
     {
-      "icon": "./static/imgs/linksIcons/image1.png",
+      "icon":"<BookIcon></BookIcon>",
       "title": "מדריכים ומידע נוסף ",
       "description": "מדריכים",
       "link":"https://www.gov.il/he/departments/informationtype/?OfficeId=c0d8ba69-e309-4fe5-801f-855971774a90&topic=166c6678-1f00-4ac9-9997-6a8f0d9727ae&limit=10&UnitId=961d2b41-ab18-4939-9955-9a9eed8335bc&informationType=generalpage&skip=0"
@@ -14,8 +16,8 @@ export const link_Data=
     },
     {
       "icon": "../static/imgs/linksIcons/image2.png",
-      "title": "פרטי התקשרות בנושא דואר חבילות ",
-      "description": "אתר רשות המיסים",
+      "title": "פרטי התקשרות   ",
+      "description": " דואר חבילות אתר רשות המיסים ",
       "link":"https://www.gov.il/he/departments/general/call-center-mail-packages"
     },
     {

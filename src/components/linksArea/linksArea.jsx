@@ -11,7 +11,7 @@ export default function LinksArea() {
     <React.Fragment>
        <div className='linksAreaDiv' >
       {link_Data.map((item, index) => (
-        <LinkCard key={index} title={item.title} description={item.description}  link={item.link}  />
+        <LinkCard key={index} icon={item.icon }title={item.title} description={item.description}  link={item.link}  />
       ))}
     </div>
      
