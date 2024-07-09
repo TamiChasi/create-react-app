@@ -1,31 +1,22 @@
 {
     "welcome": "Welcome to my app!",
-    "test" : "this is test",
-
+    "test": "this is test",
     "packageDetailsTilte": "Information for package num. ",
-
     "shippingTrackingTitle": "Shipment tracking - Customs Department",
-
-    "shipmentTrackingSecondaryTitle":"Current information on shipments sent from abroad by sea/air/land delivery",
-
-    "highlightedSubheadingShipmentTracking":"When entering a package/cargo number, data will be displayed about the cargo and the handling status with the customs/certifying authority.",
-     
-    "Search":"Search",
-
-    "HereYouWriteTrackingTax":"Here you write tracking tax",
-
+    "shipmentTrackingSecondaryTitle": "Current information on shipments sent from abroad by sea/air/land delivery",
+    "highlightedSubheadingShipmentTracking": "When entering a package/cargo number, data will be displayed about the cargo and the handling status with the customs/certifying authority.",
+    "Search": "Search",
+    "HereYouWriteTrackingTax": "Here you write tracking tax",
     "TitleInput": "tracking tax",
-
-
-    
     "searchTimeTitle": "The Information is update for",
     "caringFactor": "Caring factor",
     "orBySite": "Or By Site:",
     "taxesPaymentTilte": "",
-    "payImportTaxes":"pay import taxes",
-    "apealImportTaxes":"apeal on payment of taxes",
+    "payImportTaxes": "pay import taxes",
+    "apealImportTaxes": "apeal on payment of taxes",
     "packageTimelineTilte": "",
-    "packageStatusQuestion":"",
-    "packageStatusTitle":"the status of the item"
-
+    "packageStatusQuestion": "",
+    "packageStatusTitle": "the status of the item",
+    "linksAreaTitle": "Important Link",
+    "linksAreaSunTitle": "that can help you"
 }
