@@ -1,27 +1,29 @@
 .div-link-card {
     /* flex: 1;  */
     border: '1px solid #2b5287';
-    border-radius: '9.22px 0px 0px 0px';
     margin: '5px';
     max-width: "fit-content";
 }
 .card-with-border {
-    border: 1px solid rgba(43, 82, 135, 1) ;
-    padding: 10px 10px 0 10px; 
-    
+    border: 1px solid rgba(43, 82, 135, 1);
+    padding: 25px 10px 0 10px;
+    border-radius: 15px !important; 
 }
 
 .card-icon-size{
     height: 56;
     width: 56;
 }
- link {
+link {
     max-width: inherit;
     word-wrap: break-word;
     display: table-caption;
     text-align: center;
- }
+}
 .links-card-div {
     max-width: 130px;
-    margin: 10px;    
+    /* margin: 10px;     */
+}
+.card-link-description {
+    padding: 5px !important;
 }
