@@ -1,6 +1,6 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
-import LinksEria from '../components/linksEria'
+import LinksArea from '../components/linksArea/linksArea'
 import { useTranslation } from 'react-i18next';
 
 export default function AppLayoutPage() {
@@ -11,7 +11,6 @@ export default function AppLayoutPage() {
     <div>
       <h1>{ t ("welcome") }</h1>
         <Outlet/>
-        <LinksEria></LinksEria>
     </div>
   )
 }
