@@ -19,7 +19,7 @@ export default function SearchPage() {
         <PackageSearch></PackageSearch>
         <PackageInfo></PackageInfo>
       </packageContext.Provider>
-      <LinksArea></LinksArea>
+     
     </div>
   )
 }

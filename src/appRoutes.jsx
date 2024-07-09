@@ -5,6 +5,7 @@ import FaqsPage from './pages/faqsPage'
 import AppLayoutPage from './pages/appLayoutPage'
 
 
+
 export default function AppRoutes() {
   return (
     <Router>
