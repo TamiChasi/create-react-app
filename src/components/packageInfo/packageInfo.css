@@ -1,5 +1,21 @@
-#PackageInfo {
+.packageInfo {
     border: 2px solid rgba(43, 82, 135, 1);
     border-radius: 10px;
-    max-width: 90%;
+    max-width: 75% !important;
+}
+
+.packageInfo .MuiContainer-root{
+    
+}
+
+.packageInfo div.MuiDivider-root  {
+    padding-top: 20px;
+    border-color: rgba(43, 82, 135, 0.4);
+    border-bottom-width:1px
+    ;
+}
+
+.packageInfo .MuiBox-root {
+    direction: rtl;
+    display: flex;
 }

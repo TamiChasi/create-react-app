@@ -2,5 +2,6 @@ import { createContext } from "react";
 
 export const packageContext = createContext({
     packageData : {},
-    packageId: null
+    packageId: null,
+    searchTime: null
 });
