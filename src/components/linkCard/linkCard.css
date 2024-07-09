@@ -19,6 +19,7 @@ link {
     word-wrap: break-word;
     display: table-caption;
     text-align: center;
+
 }
 .links-card-div {
     max-width: 130px;
@@ -26,4 +27,6 @@ link {
 }
 .card-link-description {
     padding: 5px !important;
+    color: rgba(12, 48, 88, 1);
+    font-weight: bold;
 }

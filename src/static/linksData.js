@@ -35,7 +35,7 @@ export const link_Data =
     {
       "icon": "PhoneContactIcon",
       "title": "פרטי התקשרות",
-      "description": " דואר חבילות אתר רשות המיסים ",
+      "description": " דואר חבילות רשות המיסים ",
       "link": "https://www.gov.il/he/departments/general/call-center-mail-packages"
     },
     {
