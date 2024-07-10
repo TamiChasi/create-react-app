@@ -7,11 +7,9 @@ export default function LinkCard({ icon, title, description, link }) {
   const IconComponent = iconComponents[icon];
 
   return (
-    <div className='links-card-div' >
       <Card className="card-with-border" style={{ height: '100%' }} >
         <Link href={link} underline="none" target="_blank" >
           {IconComponent && <IconComponent />}
-
           <CardContent className='card-link-description' >
             <br></br>
             {title}
@@ -19,8 +17,7 @@ export default function LinkCard({ icon, title, description, link }) {
           </CardContent>
         </Link>
       </Card>
-    </div>
-  );
+      );
 
 
 
