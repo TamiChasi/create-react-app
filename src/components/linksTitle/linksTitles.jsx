@@ -1,5 +1,7 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next';
+import './linksTitle.css'
+
 
 function LinksTitles() {
     const { t } = useTranslation();

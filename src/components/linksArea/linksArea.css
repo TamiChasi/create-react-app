@@ -1,7 +1,7 @@
 .linksAreaDiv {
     display: flex;
     width: auto;
-    margin: 1rem;
+    margin: 3px;
     direction: rtl;
     flex-wrap: wrap;
     justify-content: space-evenly;
