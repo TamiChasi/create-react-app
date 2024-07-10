@@ -5,17 +5,17 @@ import { packageContext } from '../context/packageContext'
 
 export default function SearchPage() {
 
-  let [packageData, setPackageData] = useState(getPackegeData())
+  let [packageData, setPackageData] = useState(null)
 
-  function getPackegeData() {
-    var data = require('../data/mockData.json');
-    return {...data[0],"contactPhone":"180080080", "contactSite":"https://israelpost.co.il"}
+  function setContextPackegeData(data) {
+    return setPackageData(data);
   }
 
   return (
     <div>
       <packageContext.Provider value={{packageData, searchTime: new Date()}}>
-        <PackageSearch></PackageSearch>
+        <PackageSearch setContext={setContextPackegeData}></PackageSearch>
+        <br></br>
         <PackageInfo></PackageInfo>
       </packageContext.Provider>
     </div>

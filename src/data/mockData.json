@@ -27,7 +27,11 @@
         "isLanding": true,
         "isRelease": true,
         "isDebt": false,
-        "contactDetails": "געש וורלדווייד בע\"מ"
+        "contactDetails": "געש וורלדווייד בע\"מ",
+        "contactData": {
+            "phone": "1800-800-80",
+            "site": "https://israelpost.co.il"
+        }
     },
     {
         "computedCargoIdentifierKey": "שטר מטען בלדר יבוא מס' שט\"מ בלדר GAIH50256104 ח.פ. בלדר:515308906 תאריך הקמה:040324",
@@ -39,6 +43,10 @@
         "isLanding": false,
         "isRelease": false,
         "isDebt": false,
-        "contactDetails": "געש וורלדווייד בע\"מ"
+        "contactDetails": "געש וורלדווייד בע\"מ",
+        "contactData": {
+            "phone": "1800-800-80",
+            "site": "https://israelpost.co.il"
+        }
     }
 ]
