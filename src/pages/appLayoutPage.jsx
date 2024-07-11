@@ -1,7 +1,7 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
-import LinksEria from '../components/linksEria'
 import { useTranslation } from 'react-i18next';
+import LinksArea from '../components/linksArea/linksArea';
 
 export default function AppLayoutPage() {
 
@@ -9,9 +9,9 @@ export default function AppLayoutPage() {
 
   return (
     <div>
-      <h1>{ t ("welcome") }</h1>
         <Outlet/>
-        <LinksEria></LinksEria>
+        <LinksArea></ LinksArea>
+   
     </div>
   )
 }

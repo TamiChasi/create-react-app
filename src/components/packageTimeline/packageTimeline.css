@@ -1,0 +1,24 @@
+
+
+
+
+.packageTimeline .MuiTimelineDot-root {
+    margin: 0px;
+    background-color:  rgba(12, 48, 88, 1);
+}
+
+.packageTimeline .MuiTimelineConnector-root {
+    background-color:  rgba(12, 48, 88, 1);
+}
+
+
+.packageTimeline h3{
+    text-align: right;
+    direction: rtl;
+}
+
+.packageTimeline{
+    color: rgba(12, 48, 88, 1);
+    width: 50%;
+    direction: ltr;
+}
