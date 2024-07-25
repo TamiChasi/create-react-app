@@ -18,5 +18,13 @@
     "packageStatusQuestion": "",
     "packageStatusTitle": "the status of the item",
     "linksAreaTitle": "Important Link",
-    "linksAreaSunTitle": "that can help you"
+    "linksAreaSunTitle": "that can help you",
+    "questionLink":"Questions and Answers",
+    "calculatorLink":"Tax calculator",
+    "tutorialLink":"Guide to orders from abroad",
+    "paymentLink":"Payment of import taxes",
+    "taxRefundLink":"Submitting for a Tax Refund",
+    "contactLink":"Contact Information",
+    "cargoSearchLink":"Tracking shipments",
+    "informationLink":"Information"
 }

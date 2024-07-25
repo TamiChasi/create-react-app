@@ -19,5 +19,13 @@
     "packageStatusQuestion": "האם ממתין לטיפול המכס או לגורמים אחרים?",
     "packageStatusTitle": "סטטוס הפריט",
     "linksAreaTitle": "קישורים חשובים",
-    "linksAreaSunTitle": "שיכולים לעזור לך"
+    "linksAreaSunTitle": "שיכולים לעזור לך",
+    "questionLink":"שאלות ותשובות",
+    "calculatorLink":"מחשבון מיסים",
+    "tutorialLink":"מדריך להזמנות מחול",
+    "paymentLink":"תשלום מיסי יבוא",
+    "taxRefundLink":"בקשה להחזר מיסים / ערעור",
+    "contactLink":"פרטי התקשרות",
+    "cargoSearchLink":"מעקב משלוחים",
+    "informationLink":"מידע נוסף"
 }
