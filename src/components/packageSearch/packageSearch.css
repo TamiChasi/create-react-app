@@ -4,6 +4,8 @@
   line-height: 37.92px;
   text-align: center;
   color: #0c3058;
+  Font : "Rubik";
+
 }
 
 #subheadingShipmentTracking {
@@ -22,18 +24,27 @@
   text-align: center;
 }
 
-
-
 #outlined-basic {
   width: 530px;
-  Height: 40px;
+  Height: 20px;
   padding: 0px;
 }
+
+.placeholderPadding {
+  padding: 10px; /* שוליים בפנים של האינפוט */
+}
+
+.labelPadding {
+  padding-left: 10px; /* שוליים בקו האינפוט - משמאל */
+  padding-right: 10px; /* שוליים בקו האינפוט - מימין */
+}
+
+
 
 #onclickSearch {
   width: 138px;
   Height: 40px;
-  background-color: #2B5287;
+  background-color: #0068F5;
 }
 
 .searchDiv {
@@ -45,9 +56,6 @@
 .icon-search-container {
   display: block;
 }
-
-
-
 
 .iconContainer {
   position: relative;
@@ -68,8 +76,11 @@
   top: -15%;
 }
 
-
 .personGlobeIcon {
   position: relative;
+}
 
+
+.searchDiv {
+  margin-bottom: 100px; /* הגדל את הערך לפי הצורך */
 }

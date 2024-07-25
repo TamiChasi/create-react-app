@@ -6,13 +6,15 @@
 
      "shippingTrackingTitle": "מעקב משלוחים - אגף המכס",
 
-     "subheadingShipmentTracking": "מידע עדכני על משלוחים אשר נשלחו מחו”ל במשלוח ימי/ אווירי/ יבשתי",
+     "subheadingShipmentTracking": "מידע עדכני על פריטים אשר נשלחו מחו”ל במשלוח ימי/ אווירי/ יבשתי ונעצרו לבדיקה ע”י המכס או הרשויות המוסמכות.",
 
-    "highlightedSubheadingShipmentTracking":"בעת הזנת מספר חבילה/ מטען יוצגו נתונים אודות המטען וסטאטוס הטיפול מול המכס/ רשות מסמכת.",
+      "Subheading with shipment tracking link": "למעקב עדכני על מיקום החבילה יש להיכנס למעקב משלוחים של דואר ישראל > ",
      
+    "highlightedSubheadingShipmentTracking":"בעת הזנת מספר חבילה/ מטען יוצגו נתונים אודות המטען וסטאטוס הטיפול מול המכס/ רשות מסמכת.",
+                                            
     "Search":"חיפוש",
 
-    "HereYouWriteTrackingTax":"כאן כותבים מס מעקב",
+    "HereYouWriteTrackingTax": "כאן מקלידים מס מעקב למשלוח",
 
     "TitleInput": "מספר מעקב",
 
