@@ -17,12 +17,13 @@ import PackageIcon from '../../icons/packageIcon';
 export default function PackageTimeline() {
   const datesArr = [];
   const statusArr = [
-    { statusKey: 'isLanding', date: '1/1/2024', title: 'התקבל מידע על חבילה המיועדת לbbvהישלח' },
-    { statusKey: 'isDenied', date: '1/1/2024', title: 'התקבל מידע על חבילה המיועדת להישלח' },
-    { statusKey: 'isSubmit', date: '1/1/2024', title: 'התקבל מידע על חבילה המיועדת להישלח' },
-    { statusKey: 'isDebt', date: '1/1/2024', title: 'התקבל מידע על חבילה המיועדת ללח' },
-    { statusKey: 'isDebtPayed', date: '1/1/2024', title: 'התקבל מידע על חבילה המיועדת להישלח' },
-    { statusKey: 'isReleased', date: '1/1/2024', title: 'התקבל מידע על חבילה המיועדת להישלח' }];
+    { active: true, statusKey: 'iscoming', date: '1/1/2024', title: 'התקבל מידע על חבילה המיועדת להישלח' },
+    { active: true, statusKey: 'isLanding', date: '1/1/2024', title: 'החבילה הגיעה לארץ' },
+    { active: true, statusKey: 'isDenied', date: '1/1/2024', title: 'המשלוח מעוכב ממתין לאישור רשות מוסמכת'},
+    { active: true, statusKey: 'isSubmit', date: '1/1/2024', title: 'הוגשה הצהרה ומספר הצהרה' },
+    { active: true, statusKey: 'isDebt', date: '1/1/2024', title: 'קיים חוב שטרם שולם' },
+    { active: true, statusKey: 'isDebtPayed', date: '1/1/2024', title: 'חוב שולם' },
+    { active: false, statusKey: 'isReleased', date: '1/1/2024', title: 'המשלוח שוחרר מהמכס'}];
 
   const { t } = useTranslation()
 
@@ -43,10 +44,13 @@ export default function PackageTimeline() {
               {status.title}
             </TimelineOppositeContent>
             <TimelineSeparator >
-              <TimelineDot>
+              { status.active && <TimelineDot>
                 <PackageIcon />
-              </TimelineDot>
-              <TimelineConnector />
+              </TimelineDot> }
+              { !status.active &&<TimelineDot style={{'background-color': 'rgba(206, 215, 224, 1)'}}>
+                <PackageIcon style={{'background-color': 'grey'}} />
+              </TimelineDot> }
+              { index!= statusArr.length-1 && <TimelineConnector />}
             </TimelineSeparator>
             <TimelineContent>{status.date}</TimelineContent>
           </TimelineItem>
