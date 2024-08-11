@@ -1,10 +1,12 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Stack, TextField, Button, Box } from '@mui/material';
+import { Stack, TextField, Button, Box, Link, Typography } from '@mui/material';
+import Alert from '@mui/material/Alert';
 import './packageSearch.css';
 import ContactDetails from '../contactDetails/contactDetails';
-import CloudIcon from '../../icons/cloudIcon';
-import PersonGlobeIcon from '../../icons/personGlobeIcon';
+import WarningAmberIcon from '@mui/icons-material/WarningAmber'; // ייבוא האייקון
+
+
 
 export default function PackageSearch({ setContext }) {
   const { t } = useTranslation();
@@ -67,18 +69,15 @@ export default function PackageSearch({ setContext }) {
         {t("subheadingShipmentTracking")}
       </div>
 
-      <br />
-
-      <div id="SubheadingWithIsraelPostlink">
-       {t("Subheading with shipment tracking link")}
-      </div>
-
-      <br />
-      
       <div id="subheadingShipmentTrackingB">
         {t("highlightedSubheadingShipmentTracking")}
       </div>
 
+      
+      <div id="SubheadingWithIsraelPostlink">
+       {t("SubheadingWithShipmentTrackingLink")}
+      </div>
+      
       <br />
 
       <Box id="BoxContainer" display="flex" justifyContent="center">
@@ -90,7 +89,7 @@ export default function PackageSearch({ setContext }) {
           width="50%"
         >
           <Button id="onclickSearch" variant="contained" onClick={search}>
-            {t("Search")}
+            {t("search")}
           </Button>
 
           <TextField
@@ -110,7 +109,29 @@ export default function PackageSearch({ setContext }) {
         </Stack>
       </Box>
 
-      {error && <div style={{ color: 'red' }}>{error}</div>}
+     
+      {error && (
+        <div className="container">
+        <Alert
+         className="custom-alert"
+          severity="error"
+          icon={<WarningAmberIcon />}
+          // icon={<WarningIcon />}
+          sx={{ width: '100%', mt: 2 }}
+         >
+          <Typography>
+            {t("trackingNumberNotFound")}
+            <br />
+            {t("checkDetailsOrGoToTracking")}
+            <Link href="https://israelpost.co.il/%D7%9E%D7%A2%D7%A7%D7%91-%D7%9E%D7%A9%D7%9C%D7%95%D7%97%D7%99%D7%9D/" target="_blank" rel="noopener" sx={{ ml: 1 }}>
+            {t("goToTracking")}
+            </Link>
+          </Typography>
+        </Alert>
+        </div>
+      )}
+
+
 
       {/* תצוגת קומפוננטת התוצאות עם גלילה אוטומטית */}
       {searchResult && (

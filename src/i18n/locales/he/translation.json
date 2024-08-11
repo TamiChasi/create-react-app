@@ -3,28 +3,16 @@
     "test": "בדיקה",
     "packageDetailsTilte": "מידע על פריט ",
 
-
-     "shippingTrackingTitle": "מעקב משלוחים - אגף המכס",
-
-     "subheadingShipmentTracking": "מידע עדכני על פריטים אשר נשלחו מחו”ל במשלוח ימי/ אווירי/ יבשתי ונעצרו לבדיקה ע”י המכס או הרשויות המוסמכות.",
-
-      "Subheading with shipment tracking link": "למעקב עדכני על מיקום החבילה יש להיכנס למעקב משלוחים של דואר ישראל > ",
-     
-    "highlightedSubheadingShipmentTracking":"בעת הזנת מספר חבילה/ מטען יוצגו נתונים אודות המטען וסטאטוס הטיפול מול המכס/ רשות מסמכת.",
-                                            
-    "Search":"חיפוש",
-
-    "HereYouWriteTrackingTax": "כאן מקלידים מס מעקב למשלוח",
-
-
     "shippingTrackingTitle": "מעקב משלוחים - אגף המכס",
-    "subheadingShipmentTracking": "מידע עדכני על משלוחים אשר נשלחו מחו”ל במשלוח ימי/ אווירי/ יבשתי",
-    "highlightedSubheadingShipmentTracking": "בעת הזנת מספר חבילה/ מטען יוצגו נתונים אודות המטען וסטאטוס הטיפול מול המכס/ רשות מסמכת.",
-    "Search": "חיפוש",
+    "subheadingShipmentTracking": "כתבו את מספר החבילה או המטען, ונציג לכם נתונים על המטען ומצב הטיפול מול המכס ",
+    "highlightedSubheadingShipmentTracking": "או הרשות המוסמכת",
     "HereYouWriteTrackingTax": "כאן כותבים מס מעקב",
-
     "TitleInput": "מספר מעקב",
-    "trackingNumberNotFound": "מספר מעקב לא נמצא",
+    "trackingNumberNotFound": "לא הצלחנו למצוא את החבילה או המטען שחיפשת.",
+   "checkDetailsOrGoToTracking":"כדאי לבדוק שוב את הפרטים שכתבת או לנסות לעבור למעקב משלוחים.",
+    "goToTracking": "באתר דואר ישראל",
+    "search": "חיפוש",
+
     "searchTimeTitle": "המידע עדכני לתאריך: ",
     "caringFactor": " גורם מטפל",
     "orBySite": "או באתר:",
@@ -35,13 +23,5 @@
     "packageStatusQuestion": "האם ממתין לטיפול המכס או לגורמים אחרים?",
     "packageStatusTitle": "סטטוס הפריט",
     "linksAreaTitle": "קישורים חשובים",
-    "linksAreaSunTitle": "שיכולים לעזור לך",
-    "questionLink":"שאלות ותשובות",
-    "calculatorLink":"מחשבון מיסים",
-    "tutorialLink":"מדריך להזמנות מחול",
-    "paymentLink":"תשלום מיסי יבוא",
-    "taxRefundLink":"בקשה להחזר מיסים / ערעור",
-    "contactLink":"פרטי התקשרות",
-    "cargoSearchLink":"מעקב משלוחים",
-    "informationLink":"מידע נוסף"
+    "linksAreaSunTitle": "שיכולים לעזור לך"
 }

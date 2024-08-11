@@ -8,21 +8,82 @@
 
 }
 
+
 #subheadingShipmentTracking {
   font-size: 18px;
-  font-weight: 500;
-  line-height: 21.6px;
+  font-weight: 1013px;
+  line-height: 53px;
   text-align: center;
-  color: #707070;
+  color: #0C3058;
   margin-bottom: 16px;
+} 
+
+
+#subheadingShipmentTrackingB{
+  font-size: 18px;
+  font-weight: 1013px;
+  line-height: 53px;
+  text-align: center;
+  color: #0C3058;
+  margin-bottom: 16px;
+} 
+
+
+.container {
+  display: flex;
+  justify-content: center; /* מרכז את האלמנט אופקית */
+  align-items: center; /* מרכז את האלמנט אנכית */
+  height: 100vh; /* מוודא שהתצוגה תתפרש על כל הגובה של הדף */
 }
 
-#subheadingShipmentTrackingB {
+
+
+.custom-alert {
+  width: 696px !important; 
+  height: 72px !important; 
+  top: 676px !important;
+  left: 361px !important;
+  padding: 16px 0 0 0 !important; 
+  gap: 0 !important;
+  border-radius: 8px 8px 8px 8px !important; 
+  border: 1px solid #99C2FB !important;
+  color: rgba(32, 66, 113, 1) !important;
+  background-color: #FFFFFF !important; 
+  display: flex!important;
+  justify-content: space-between !important; /* center טוב יותר אבל מזיז את הבחירה */
+  
+}
+
+
+.custom-link {
+  color: #007BFF; /* צבע הכחול של הלינק */
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+
+.custom-link:hover {
+  text-decoration: underline;
+}
+
+/* 
+#subheadingShipmentTracking {
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 24px;
   text-align: center;
-}
+  color: #0C3058;
+  margin-bottom: 16px;
+} */
+
+/* .custom-link:before {
+  content: '→'; /* החץ שיופיע לפני הטקסט של הלינק */
+  /* margin-right: 8px; מרווח בין החץ לטקסט */
+/* } */
+ /* */ 
+
 
 #outlined-basic {
   width: 530px;
@@ -40,7 +101,6 @@
 }
 
 
-
 #onclickSearch {
   width: 138px;
   Height: 40px;
@@ -51,6 +111,13 @@
   background-color: #DEEEFA;
   padding-top: 20px;
   padding-bottom: 20px;
+  margin-bottom: 100px; /* הגדל את הערך לפי הצורך */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 .icon-search-container {
@@ -61,14 +128,6 @@
   position: relative;
 }
 
-.searchDiv {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-}
 
 .cloudIcon {
   position: absolute;
@@ -80,7 +139,3 @@
   position: relative;
 }
 
-
-.searchDiv {
-  margin-bottom: 100px; /* הגדל את הערך לפי הצורך */
-}
