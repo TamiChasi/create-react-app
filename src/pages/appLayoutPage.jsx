@@ -3,6 +3,7 @@ import { Outlet } from 'react-router-dom'
 import { useTranslation } from 'react-i18next';
 import LinksArea from '../components/linksArea/linksArea';
 
+
 export default function AppLayoutPage() {
 
   const { t } = useTranslation();
@@ -11,6 +12,7 @@ export default function AppLayoutPage() {
     <div>
         <Outlet/>
         <LinksArea></ LinksArea>
+        
    
     </div>
   )
