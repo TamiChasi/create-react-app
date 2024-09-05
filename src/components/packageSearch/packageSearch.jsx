@@ -74,9 +74,9 @@ export default function PackageSearch({ setContext }) {
       </div>
 
       
-      <div id="SubheadingWithIsraelPostlink">
+      {/* <div id="SubheadingWithIsraelPostlink">
        {t("SubheadingWithShipmentTrackingLink")}
-      </div>
+      </div> */}
       
       <br />
 

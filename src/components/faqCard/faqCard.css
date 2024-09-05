@@ -1,0 +1,34 @@
+
+.faq-card {
+  margin-bottom: 10px;
+  border: 1px solid rgba(43, 82, 135, 0.5);
+  border-radius: 15px !important;
+  max-width: 904px;
+  width: 100%; /* Ensures the accordion takes up the full width up to max-width */
+  margin: 0 auto !important; /* Center the accordion horizontally */
+  text-align: center;
+}
+
+.expand-icon {
+  color: rgba(43, 82, 135, 1); /* הגדרת צבע החץ */
+  border: 2.5px ;
+}
+
+.faq-question {
+  color: rgba(12, 48, 88, 1);
+  font-weight: bold;
+  text-align: center 
+}
+
+.faq-details {
+  border-top: 1px solid #ccc; /* קו מפריד בין השאלה לתשובה */
+  padding-top: 0px; /* מרווח נוסף מעל הקו אם רוצים */
+}
+
+
+.faq-answer {
+  color: rgba(12, 48, 88, 0.8);
+  text-align: right;
+}
+
+
