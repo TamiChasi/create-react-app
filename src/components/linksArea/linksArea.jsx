@@ -11,7 +11,8 @@ import SaperatorIcon from '../../icons/saperatorIcon.jsx'
 
 export default function LinksArea() {
   return (
-    <Container>
+    <Container style={{ height: '100%', minHeight: '100vh' }}>
+
       <LinksTitles></LinksTitles>
       <SaperatorIcon></SaperatorIcon>
       <br></br>
