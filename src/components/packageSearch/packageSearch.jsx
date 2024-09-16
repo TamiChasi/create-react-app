@@ -73,11 +73,9 @@ export default function PackageSearch({ setContext }) {
         {t("highlightedSubheadingShipmentTracking")}
       </div>
 
-
-      <div id="SubheadingWithIsraelPostlink">
-        {t("SubheadingWithShipmentTrackingLink")}
-      </div>
-
+      {/* <div id="SubheadingWithIsraelPostlink">
+       {t("SubheadingWithShipmentTrackingLink")}
+      </div> */}
       <br />
 
       <Box id="BoxContainer" display="flex" justifyContent="center">

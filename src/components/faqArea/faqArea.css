@@ -1,0 +1,29 @@
+.faqAreaDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /* המרווח בין הכרטיסים */
+  width: auto;
+  margin: 3px;
+  direction: rtl;
+}
+
+.faq-title {
+  color: rgba(12, 48, 88, 1);
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.show-more-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.onClickQuestions {
+  color: rgba(12, 48, 88, 1) !important;
+  border: 1px solid rgba(12, 48, 88, 1) !important;
+}
+
+.onClickQuestions:hover {
+  background-color: rgba(12, 48, 88, 0.1) !important;
+}

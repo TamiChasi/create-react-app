@@ -12,6 +12,10 @@
    "checkDetailsOrGoToTracking":"כדאי לבדוק שוב את הפרטים שכתבת או לנסות לעבור למעקב משלוחים.",
     "goToTracking": "באתר דואר ישראל",
     "search": "חיפוש",
+    "titleQuestions": "שאלות ששאלו אותנו",
+    "subheadingQuestions":"ואולי יעניין גם אותך",
+    "Add questions": "הצג שאלות נוספות",
+    "Show less questions": "הצג פחות",
 
     "searchTimeTitle": "המידע עדכני לתאריך: ",
     "caringFactor": " גורם מטפל",
