@@ -3,8 +3,8 @@ import { useTranslation } from 'react-i18next';
 import { Stack, TextField, Button, Box, Link, Typography } from '@mui/material';
 import Alert from '@mui/material/Alert';
 import './packageSearch.css';
-import ContactDetails from '../contactDetails/contactDetails';
 import WarningAmberIcon from '@mui/icons-material/WarningAmber'; // ייבוא האייקון
+import { getPackageStatus } from '../../api/dataService'
 
 
 
@@ -25,26 +25,26 @@ export default function PackageSearch({ setContext }) {
     }
   };
 
-  const search = () => {
-    var mockData = require('../../data/mockData.json');
+  const search = async () => {
+    try {
 
-    const result = mockData.find((item) => item.declerationNumber === packageNumber);
-    if (result) {
-      setSearchResult(result);
-      setContext(result);
-
-
-      
-
-      setError(null);
-    } else {
-      setSearchResult(null);
-      setContext(null);
-      setError(t("trackingNumberNotFound"));
+      const result = await getPackageStatus(packageNumber);
+      if (result) {
+        setSearchResult(result);
+        setContext(result);
+        setError(null);
+      } else {
+        setSearchResult(null);
+        setContext(null);
+        setError(t("trackingNumberNotFound"));
+      }
+    }
+    catch {
+      throw new error;
     }
   };
 
-  
+
   useEffect(() => {
     // גלול לקומפוננטת התוצאות כאשר searchResult מתעדכן
     if (searchResult && resultRef.current) {
@@ -56,7 +56,7 @@ export default function PackageSearch({ setContext }) {
   return (
     <div >
       <div className="iconContainer">
-       
+
       </div>
 
       <div id="deliveryTrackingHeader">
@@ -73,11 +73,9 @@ export default function PackageSearch({ setContext }) {
         {t("highlightedSubheadingShipmentTracking")}
       </div>
 
-      
       {/* <div id="SubheadingWithIsraelPostlink">
        {t("SubheadingWithShipmentTrackingLink")}
       </div> */}
-      
       <br />
 
       <Box id="BoxContainer" display="flex" justifyContent="center">
@@ -109,25 +107,25 @@ export default function PackageSearch({ setContext }) {
         </Stack>
       </Box>
 
-     
+
       {error && (
         <div className="container">
-        <Alert
-         className="custom-alert"
-          severity="error"
-          icon={<WarningAmberIcon />}
-          // icon={<WarningIcon />}
-          sx={{ width: '100%', mt: 2 }}
-         >
-          <Typography>
-            {t("trackingNumberNotFound")}
-            <br />
-            {t("checkDetailsOrGoToTracking")}
-            <Link href="https://israelpost.co.il/%D7%9E%D7%A2%D7%A7%D7%91-%D7%9E%D7%A9%D7%9C%D7%95%D7%97%D7%99%D7%9D/" target="_blank" rel="noopener" sx={{ ml: 1 }}>
-            {t("goToTracking")}
-            </Link>
-          </Typography>
-        </Alert>
+          <Alert
+            className="custom-alert"
+            severity="error"
+            icon={<WarningAmberIcon />}
+            // icon={<WarningIcon />}
+            sx={{ width: '100%', mt: 2 }}
+          >
+            <Typography>
+              {t("trackingNumberNotFound")}
+              <br />
+              {t("checkDetailsOrGoToTracking")}
+              <Link href="https://israelpost.co.il/%D7%9E%D7%A2%D7%A7%D7%91-%D7%9E%D7%A9%D7%9C%D7%95%D7%97%D7%99%D7%9D/" target="_blank" rel="noopener" sx={{ ml: 1 }}>
+                {t("goToTracking")}
+              </Link>
+            </Typography>
+          </Alert>
         </div>
       )}
 
