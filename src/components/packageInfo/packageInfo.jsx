@@ -1,9 +1,8 @@
 import React, { useContext } from 'react'
-import PackageDetails from '../packageDetails/packageDetails'
 import PackageStatus from '../packageStatus/packageStatus'
 import PackageTimeline from '../packageTimeline/packageTimeline'
 import './packageInfo.css'
-import { Container } from '@mui/material'
+import { Container, Stack } from '@mui/material'
 import TaxesPayment from '../taxesPayment/taxesPayment'
 import ContactDetails from '../contactDetails/contactDetails'
 import Divider from '@mui/material/Divider';
@@ -16,21 +15,30 @@ export default function PackageInfo() {
 
 
   return (
-    <Container className='packageInfo'  style={{ display: packageData ? 'block' : 'none' }}>
-      <PackageDetails></PackageDetails>
-      <Box>
-        <ContactDetails></ContactDetails>
-        <Divider orientation="vertical" variant="middle" flexItem />
-        <TaxesPayment></TaxesPayment>
-      </Box>
+    <div className='packageInfo' style={{ display: packageData ? 'block' : 'none' }}>
+      <Container className='packageInfoContainer'>
+        <Box>
+          <Stack
+          direction={{ xs: 'column', sm: 'row' }} // column on phone, row on larger screens
+          spacing={2} // Space between the elements
+          alignItems="center"
+        >
+          <ContactDetails />
+          <Divider orientation="vertical" variant="middle" flexItem sx={{ border: 1, margin: 0 }} />
+          <TaxesPayment />
+          </Stack>
+        </Box>
+        <br />
+      </Container>
+
       <br />
-      <Divider component="div" />
-      <br />
-      <Box>
-        <PackageTimeline></PackageTimeline>
-        <Divider orientation="vertical" variant="middle" flexItem />
-        <PackageStatus></PackageStatus>
-      </Box>
-    </Container>
+      <Container className='packageInfoContainer'>
+        <Box style={{ marginBottom: '20px' }}>
+          <PackageTimeline packageData={packageData}></PackageTimeline>
+          <Divider orientation="vertical" variant="middle" flexItem sx={{ border: 1, margin: 0 }} />
+          <PackageStatus></PackageStatus>
+        </Box>
+      </Container>
+    </div>
   )
 }

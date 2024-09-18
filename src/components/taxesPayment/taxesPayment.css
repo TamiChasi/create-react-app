@@ -1,29 +1,39 @@
-.taxesPayment{
-    text-align: right;
-    direction: rtl;
-    color: rgba(12, 48, 88, 1);
-    border-left: solid, rgba(12, 48, 88, 1), 2rem;
-    margin-right: 20px;
+.taxesPayment {
+   text-align: right;
+   direction: rtl;
+   color: rgba(12, 48, 88, 1);
+   border-left: solid, rgba(12, 48, 88, 1), 2rem;
+   margin: 5px 30px 5px 5px;
 
-    
+
 }
 
-.taxesPayment .MuiButton-contained{
+.taxesPayment .MuiButton-contained {
    margin-left: 10px;
    background-color: rgba(32, 66, 113, 1);
 
 }
-.taxesPayment .MuiButton-outlined{
+
+.taxesPayment .MuiButton-outlined {
    margin-left: 10px;
    color: rgba(32, 66, 113, 1);
 
 }
 
 
-.packageDetails h3{
-    margin-bottom: unset;
- }
+.taxesPayment h3 {
+   margin: 0;
+}
 
- .packageDetails p{
-    margin: unset;
- }
+.taxesPayment p {
+   margin: unset;
+}
+
+.btnStyle {
+   background-color: #0068F5 !important;
+   border-radius: 8px;
+}
+
+.linkStyle {
+   color: #0068F5;
+}
