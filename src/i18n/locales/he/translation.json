@@ -19,13 +19,16 @@
 
     "searchTimeTitle": "המידע עדכני לתאריך: ",
     "caringFactor": " גורם מטפל",
+    "israelPost": "דואר ישראל",
     "orBySite": "או באתר:",
-    "taxesPaymentTilte": "תשלום מיסים",
-    "payImportTaxes": "מעבר לתשלום מיסי היבוא",
+    "taxesPaymentTilte": "קיים חוב לתשלום עבור הפריט ",
+    "payImportTaxes": "מעבר לתשלום",
     "apealImportTaxes": "ערעור על תשלום מיסים",
     "packageTimelineTilte": "שלבי הטיפול בפריט",
-    "packageStatusQuestion": "האם ממתין לטיפול המכס או לגורמים אחרים?",
+    "packageStatusQuestion": "האם ממתין לטיפול המכס וגורמים הנלווים ?",
+    "packageHasConfirmation":"האם קיים אישור לשחרור החבילה ?",
     "packageStatusTitle": "סטטוס הפריט",
     "linksAreaTitle": "קישורים חשובים",
-    "linksAreaSunTitle": "שיכולים לעזור לך"
+    "linksAreaSunTitle": "שיכולים לעזור לך",
+    "appeal": "ערעור על תשלום המיסים"
 }

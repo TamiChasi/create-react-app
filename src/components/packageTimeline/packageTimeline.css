@@ -1,24 +1,25 @@
-
-
-
-
-.packageTimeline .MuiTimelineDot-root {
-    margin: 0px;
-    background-color:  rgba(12, 48, 88, 1);
-}
-
-.packageTimeline .MuiTimelineConnector-root {
-    background-color:  rgba(12, 48, 88, 1);
-}
-
-
-.packageTimeline h3{
-    text-align: right;
-    direction: rtl;
-}
-
 .packageTimeline{
     color: rgba(12, 48, 88, 1);
     width: 50%;
     direction: ltr;
+    margin: 5px 5px 5px 30px;
+
+    .MuiTimelineDot-root {
+        margin: 0px;
+        background-color: #0056D7;
+    }
+    
+    .MuiTimelineConnector-root {
+        background-color: #80B4FA;
+        width: 1px;
+    }
+
+    h3{
+        text-align: right;
+        direction: rtl;
+    }
+    
+    .MuiTimeline-root {
+        color: #2B5287;
+    }
 }
