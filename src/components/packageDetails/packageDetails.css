@@ -1,0 +1,17 @@
+.packageDetails{
+    text-align: right;
+    direction: rtl;
+    color: rgba(12, 48, 88, 1);
+}
+
+.packageDetails h2{
+   margin-bottom: unset;
+}
+
+.packageDetails h3{
+    margin-bottom: unset;
+ }
+
+ .packageDetails p{
+    margin: unset;
+ }
