@@ -8,7 +8,7 @@
     "Search": "Search",
     "HereYouWriteTrackingTax": "Here you write tracking tax",
     "TitleInput": "tracking tax",
-    "searchTimeTitle": "The Information is update for",
+    "searchTimeTitle": "The Information is update for:",
     "caringFactor": "Caring factor",
     "israelPost": "Israel Post",
     "orBySite": "Or By Site:",
@@ -29,5 +29,7 @@
     "contactLink":"Contact Information",
     "cargoSearchLink":"Tracking shipments",
     "informationLink":"Information",
-    "appeal": "Appeal the payment"
+    "appeal": "Appeal the payment",
+    "backBtnText": " Back to search items",
+    "errorMsg": "Error occured, please try later."
 }

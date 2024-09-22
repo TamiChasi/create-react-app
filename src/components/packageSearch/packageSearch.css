@@ -125,11 +125,6 @@
   display: block;
 }
 
-.iconContainer {
-  position: relative;
-}
-
-
 .cloudIcon {
   position: absolute;
   left: 35%;
@@ -138,5 +133,20 @@
 
 .personGlobeIcon {
   position: relative;
+}
+
+.btnContainer {
+  width: 80%;
+  display: flex;
+  justify-content: start;
+  margin: 0 auto;
+  direction: rtl;
+
+  #backBtn {
+      background-color: transparent;
+      color: #0068F5;
+      border: none;
+      align-self: last baseline;
+  }
 }
 

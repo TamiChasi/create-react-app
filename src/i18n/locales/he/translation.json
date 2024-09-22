@@ -17,7 +17,7 @@
     "Add questions": "הצג שאלות נוספות",
     "Show less questions": "הצג פחות",
 
-    "searchTimeTitle": "המידע עדכני לתאריך: ",
+    "searchTimeTitle": "המידע עדכני ל: ",
     "caringFactor": " גורם מטפל",
     "israelPost": "דואר ישראל",
     "orBySite": "או באתר:",
@@ -30,5 +30,7 @@
     "packageStatusTitle": "סטטוס הפריט",
     "linksAreaTitle": "קישורים חשובים",
     "linksAreaSunTitle": "שיכולים לעזור לך",
-    "appeal": "ערעור על תשלום המיסים"
+    "appeal": "ערעור על תשלום המיסים",
+    "backBtnText": " חזרה לחיפוש פריטים",
+    "errorMsg": ".ארעה שגיאה, אנא נסו מאוחר יותר"
 }

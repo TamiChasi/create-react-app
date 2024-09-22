@@ -3,7 +3,7 @@
    direction: rtl;
    color: rgba(12, 48, 88, 1);
    border-left: solid, rgba(12, 48, 88, 1), 2rem;
-   margin: 5px 30px 5px 5px;
+   margin: 5px 15px 5px 5px !important;
 
 
 }
