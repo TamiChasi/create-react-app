@@ -19,13 +19,13 @@ export default function PackageInfo() {
       <Container className='packageInfoContainer'>
         <Box>
           <Stack
-          direction={{ xs: 'column', sm: 'row' }} // column on phone, row on larger screens
-          spacing={2} // Space between the elements
-          alignItems="center"
-        >
-          <ContactDetails />
-          <Divider orientation="vertical" variant="middle" flexItem sx={{ border: 1, margin: 0 }} />
-          <TaxesPayment />
+            direction={{ xs: 'column', sm: 'row' }} // column on phone, row on larger screens
+            spacing={2} // Space between the elements
+            alignItems="center"
+          >
+            <ContactDetails />
+            <Divider orientation="vertical" variant="middle" flexItem sx={{ border: 1, margin: 0 }} />
+            <TaxesPayment />
           </Stack>
         </Box>
         <br />
