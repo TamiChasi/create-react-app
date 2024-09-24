@@ -4,10 +4,12 @@
     "packageDetailsTilte": "מידע על פריט ",
 
     "shippingTrackingTitle": "מעקב משלוחים - אגף המכס",
+    
     "subheadingShipmentTracking": "כתבו את מספר החבילה או המטען, ונציג לכם נתונים על המטען ומצב הטיפול מול המכס ",
+    
     "highlightedSubheadingShipmentTracking": "או הרשות המוסמכת",
-    "HereYouWriteTrackingTax": "כאן כותבים מס מעקב",
-    "TitleInput": "מספר מעקב",
+    "HereYouWriteTrackingTax":"כאן מקלידים מספר מעקב למשלוח",
+
     "trackingNumberNotFound": "לא הצלחנו למצוא את החבילה או המטען שחיפשת.",
    "checkDetailsOrGoToTracking":"כדאי לבדוק שוב את הפרטים שכתבת או לנסות לעבור למעקב משלוחים.",
     "goToTracking": "באתר דואר ישראל",
@@ -27,5 +29,13 @@
     "packageStatusQuestion": "האם ממתין לטיפול המכס או לגורמים אחרים?",
     "packageStatusTitle": "סטטוס הפריט",
     "linksAreaTitle": "קישורים חשובים",
-    "linksAreaSunTitle": "שיכולים לעזור לך"
+    "linksAreaSunTitle": "שיכולים לעזור לך",
+    "questionLink":"שאלות ותשובות",
+    "calculatorLink":"מחשבון מיסים",
+    "tutorialLink":"מדריך להזמנות מחול",
+    "paymentLink":"תשלום מיסי יבוא",
+    "taxRefundLink":"בקשה להחזר מיסים / ערעור",
+    "contactLink":"דואר חבילות",
+    "cargoSearchLink":"מעקב משלוחים",
+    "informationLink":"מידע נוסף"
 }

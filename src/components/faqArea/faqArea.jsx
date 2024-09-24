@@ -33,7 +33,9 @@ export default function FaqArea() {
   return (
     <Container>
       <Typography ref={titleRef} variant="h5" className="faq-title">
+       <div id="titleQuestions">
         {t("titleQuestions")}
+       </div>
         </Typography>
       <br></br>
 

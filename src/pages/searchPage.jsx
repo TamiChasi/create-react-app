@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import PackageSearch from '../components/packageSearch/packageSearch'
 import PackageInfo from '../components/packageInfo/packageInfo'
 import { packageContext } from '../context/packageContext'
@@ -15,6 +15,11 @@ export default function SearchPage() {
   function setContextPackegeData(data) {
     return setPackageData(data);
   }
+
+  useEffect(() => {
+    document.body.style.backgroundColor = '#f1f7ff';
+  }, []);
+   
 
   return (
     <div style={{ position: 'relative', minHeight: '100vh', backgroundSize: 'cover',  backgroundImage: `url(${backgroundImage})`, height:'100%' }}>

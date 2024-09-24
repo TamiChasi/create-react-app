@@ -1,5 +1,5 @@
 import React from 'react'
-
+//מחשבון מיסים
 function SearchInPaperIcon() {
     return (
         <svg width="134" height="191" viewBox="0 0 134 191" fill="none" xmlns="http://www.w3.org/2000/svg">

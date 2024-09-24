@@ -1,3 +1,9 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
+
+
 body {
-    font-family: "Rubik", "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family: 'Rubik', 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
 }
