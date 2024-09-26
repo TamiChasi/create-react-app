@@ -31,5 +31,6 @@
     "informationLink":"Information",
     "appeal": "Appeal the payment",
     "backBtnText": " Back to search items",
-    "errorMsg": "Error occured, please try later."
+    "errorMsg": "Error occured, please try later.",
+    "loadingMsg": "Just a moment and we can show you the data"
 }
