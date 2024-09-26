@@ -52,9 +52,17 @@
   border: 1px solid #99C2FB !important;
   background-color: #FFFFFF !important;
   display: flex !important;
-  justify-content: space-between !important; /* ריווח בין האייקון לטקסט */
-  align-items: center !important;
+  align-items: center !important; /* מרכז אנכית */
+  text-align: center !important; 
   position: relative;
+  align-items: center !important; /* מוודא שכל התוכן מיושר אנכית */
+  justify-content: space-between !important; /* מרחיק את האייקון מהטקסט */
+  flex-direction: row-reverse !important; /* ממקם את האייקון בצד ימין */
+  display: flex !important;
+  justify-content: center !important; /* מרכז אופקית */
+  align-items: center !important; /* מרכז אנכית */
+  text-align: center !important; /* מוודא שהטקסט עצמו מיושר */
+  flex-direction: row-reverse !important; /* ממקם את האייקון בצד ימין */
 }
 
 .iconSpacing {
