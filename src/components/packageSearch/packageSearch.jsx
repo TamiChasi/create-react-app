@@ -7,6 +7,7 @@ import WarningAmberIcon from '@mui/icons-material/WarningAmber'; // ייבוא �
 import { getPackageStatus } from '../../api/dataService';
 import PackageDetails from '../packageDetails/packageDetails';
 import { CircularProgress } from '@mui/material';
+import Loading from '../loading/loading';
 
 
 export default function PackageSearch({ setContext }) {
@@ -73,45 +74,50 @@ export default function PackageSearch({ setContext }) {
           </div>
 
           <br />
+          {!loading && (
+            <div>
+              <div id="subheadingShipmentTracking">
+                {t("subheadingShipmentTracking")}
+              </div>
 
-          <div id="subheadingShipmentTracking">
-            {t("subheadingShipmentTracking")}
-          </div>
-
-          <div id="subheadingShipmentTrackingB">
-            {t("highlightedSubheadingShipmentTracking")}
-          </div>
+              <div id="subheadingShipmentTrackingB">
+                {t("highlightedSubheadingShipmentTracking")}
+              </div>
+            </div>
+          )}
           <br />
-          <Box id="BoxContainer" display="flex" justifyContent="center">
-            <Stack
-              spacing={1}
-              direction="row"
-              justifyContent="space-between"
-              alignItems="center"
-              width="50%"
-            >
+          {!loading && (
+            <Box id="BoxContainer" display="flex" justifyContent="center">
+              <Stack
+                spacing={1}
+                direction="row"
+                justifyContent="space-between"
+                alignItems="center"
+                width="50%"
+              >
 
-              <Button id="onclickSearch" variant="contained" onClick={search}>
-                {t("search")}
-              </Button>
+                <Button id="onclickSearch" variant="contained" onClick={search}>
+                  {t("search")}
+                </Button>
 
-              <TextField
-                id="outlined-basic"
-                className="TexstPadding"
-                label={t("TitleInput")}
-                variant="outlined"
-                placeholder={t("HereYouWriteTrackingTax")}
-                value={packageNumber}
-                onChange={handleChange}
-                onKeyPress={handleKeyPress}
-                maxRows={4}
-                InputProps={{
-                  className: 'placeholderPadding',
-                }}
-              />
+                <TextField
+                  id="outlined-basic"
+                  className="TexstPadding"
+                  label={t("TitleInput")}
+                  variant="outlined"
+                  placeholder={t("HereYouWriteTrackingTax")}
+                  value={packageNumber}
+                  onChange={handleChange}
+                  onKeyPress={handleKeyPress}
+                  maxRows={4}
+                  InputProps={{
+                    className: 'placeholderPadding',
+                  }}
+                />
 
-            </Stack>
-          </Box>
+              </Stack>
+            </Box>)
+          }
         </>
       )}
       {searchResult && (
@@ -121,8 +127,8 @@ export default function PackageSearch({ setContext }) {
       )}
 
       {loading ? (
-        <CircularProgress />
-      ):(error && (
+        <Loading />
+      ) : (error && (
         <div className="container">
           <Alert
             className="custom-alert"
