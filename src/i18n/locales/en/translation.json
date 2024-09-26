@@ -13,6 +13,7 @@
     "israelPost": "Israel Post",
     "orBySite": "Or By Site:",
     "taxesPaymentTilte": "There is an unpaid tax",
+    "taxesPaidTilte":"There is {{taxesAmount}} ₪ paid tax",
     "payImportTaxes": "pay taxes",
     "apealImportTaxes": "apeal on payment of taxes",
     "packageTimelineTilte": "",
@@ -30,6 +31,7 @@
     "cargoSearchLink":"Tracking shipments",
     "informationLink":"Information",
     "appeal": "Appeal the payment",
+    "paymentConfirmation": "Payment confirmation",
     "backBtnText": " Back to search items",
     "errorMsg": "Error occured, please try later."
 }

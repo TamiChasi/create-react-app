@@ -24,7 +24,6 @@ export default function PackageInfo() {
             alignItems="center"
           >
             <ContactDetails />
-            <Divider orientation="vertical" variant="middle" flexItem sx={{ border: 1, margin: 0 }} />
             <TaxesPayment />
           </Stack>
         </Box>

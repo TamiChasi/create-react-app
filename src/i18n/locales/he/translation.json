@@ -22,6 +22,7 @@
     "israelPost": "דואר ישראל",
     "orBySite": "או באתר:",
     "taxesPaymentTilte": "קיים חוב לתשלום עבור הפריט ",
+    "taxesPaidTilte":"שולם {{taxesAmount}} ₪ בגין שחרור החבילה",
     "payImportTaxes": "מעבר לתשלום",
     "apealImportTaxes": "ערעור על תשלום מיסים",
     "packageTimelineTilte": "שלבי הטיפול בפריט",
@@ -31,6 +32,7 @@
     "linksAreaTitle": "קישורים חשובים",
     "linksAreaSunTitle": "שיכולים לעזור לך",
     "appeal": "ערעור על תשלום המיסים",
+    "paymentConfirmation": "אישור תשלום",
     "backBtnText": " חזרה לחיפוש פריטים",
     "errorMsg": ".ארעה שגיאה, אנא נסו מאוחר יותר"
 }
