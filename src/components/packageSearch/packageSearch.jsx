@@ -130,7 +130,7 @@ export default function PackageSearch({ setContext }) {
           severity="error"
           icon={<WarningSign />}
           // icon={<WarningIcon />}
-          sx={{ width: '100%', mt: 2, display: 'flex', justifyContent: 'space-between' }} // מיקום האייקון לימין
+          sx={{ width: '100%', mt: 2 }}
          >
           <Typography>
             {t("trackingNumberNotFound")}

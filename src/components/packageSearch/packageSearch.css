@@ -39,23 +39,36 @@
 }
 
 
-
-.custom-alert {
-  width: 696px !important; 
-  height: 72px !important; 
-  top: 676px !important;
-  left: 361px !important;
-  padding: 16px 0 0 0 !important; 
-  gap: 0 !important;
-  border-radius: 8px 8px 8px 8px !important; 
-  border: 1px solid #99C2FB !important;
-  color: rgba(32, 66, 113, 1) !important;
-  background-color: #FFFFFF !important; 
-  display: flex!important;
-  justify-content: space-between !important; /* center טוב יותר אבל מזיז את הבחירה */
-  
+.container {
+  display: flex;
+  justify-content: center; /* מרכז את כל האלמנט אופקית */
+  align-items: center; /* מרכז את כל האלמנט אנכית */
 }
 
+.custom-alert {
+  width: 696px !important;
+  padding: 16px !important;
+  border-radius: 8px !important;
+  border: 1px solid #99C2FB !important;
+  background-color: #FFFFFF !important;
+  display: flex !important;
+  justify-content: space-between !important; /* ריווח בין האייקון לטקסט */
+  align-items: center !important;
+  position: relative;
+}
+
+.iconSpacing {
+  position: absolute;
+  left: 20px; /* מיקום האייקון לפי הצורך */
+  top: 50%;
+  transform: translateY(-50%); /* ממרכז את האייקון אנכית */
+}
+
+.alert-text {
+  text-align: center !important;
+  width: 100%;
+  color: rgba(32, 66, 113, 1) !important;
+}
 
 .custom-link {
   color: #007BFF; /* צבע הכחול של הלינק */
