@@ -128,7 +128,7 @@ export default function PackageSearch({ setContext }) {
         <Alert
          className="custom-alert"
           severity="error"
-          icon={<WarningSign id='iconSpacing'/>}
+          icon={<WarningSign className='iconSpacing'/>}
           // icon={<WarningIcon />}
           sx={{ width: '100%', mt: 2 }}
          >

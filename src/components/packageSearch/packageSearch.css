@@ -41,36 +41,40 @@
 
 .container {
   display: flex;
+
   justify-content: center; /* מרכז את כל האלמנט אופקית */
+   
   align-items: center; /* מרכז את כל האלמנט אנכית */
 }
 
 .custom-alert {
   width: 696px !important;
   padding: 16px !important;
+  height: 35px !important;
   border-radius: 8px !important;
   border: 1px solid #99C2FB !important;
   background-color: #FFFFFF !important;
   display: flex !important;
   align-items: center !important; /* מרכז אנכית */
-  text-align: center !important; 
-  position: relative;
-  align-items: center !important; /* מוודא שכל התוכן מיושר אנכית */
-  justify-content: space-between !important; /* מרחיק את האייקון מהטקסט */
-  flex-direction: row-reverse !important; /* ממקם את האייקון בצד ימין */
-  display: flex !important;
-  justify-content: center !important; /* מרכז אופקית */
-  align-items: center !important; /* מרכז אנכית */
+  justify-content: center !important; /* מרחיק את האייקון מהטקסט */
   text-align: center !important; /* מוודא שהטקסט עצמו מיושר */
   flex-direction: row-reverse !important; /* ממקם את האייקון בצד ימין */
+  position: relative !important;
+  color: #0C3058 !important;
+
 }
+
+
+
 
 .iconSpacing {
   position: absolute;
-  left: 20px; /* מיקום האייקון לפי הצורך */
-  top: 50%;
+  right: 20px !important; /* ממקם את האייקון בצד ימין */
+  top: 50%; /* ממקם את האייקון אנכית במרכז */
   transform: translateY(-50%); /* ממרכז את האייקון אנכית */
+  padding-right: 100px;
 }
+
 
 .alert-text {
   text-align: center !important;
