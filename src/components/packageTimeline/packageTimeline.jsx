@@ -37,6 +37,7 @@ export default function PackageTimeline() {
         [`& .${timelineContentClasses.root}`]: {
           flex: 0,
         },
+        padding: 0
       }} >
         {statusArr.map((status, index) => (
           <TimelineItem key={'timelineItem' + index}>

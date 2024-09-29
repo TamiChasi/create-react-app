@@ -19,23 +19,32 @@
     "Add questions": "הצג שאלות נוספות",
     "Show less questions": "הצג פחות",
 
-    "searchTimeTitle": "המידע עדכני לתאריך: ",
+    "searchTimeTitle": "המידע עדכני ל: ",
     "caringFactor": " גורם מטפל",
+    "israelPost": "דואר ישראל",
     "orBySite": "או באתר:",
-    "taxesPaymentTilte": "תשלום מיסים",
-    "payImportTaxes": "מעבר לתשלום מיסי היבוא",
+    "taxesPaymentTilte": "קיים חוב לתשלום עבור הפריט ",
+    "taxesPaidTilte":"שולם {{taxesAmount}} ₪ בגין שחרור החבילה",
+    "payImportTaxes": "מעבר לתשלום",
     "apealImportTaxes": "ערעור על תשלום מיסים",
     "packageTimelineTilte": "שלבי הטיפול בפריט",
-    "packageStatusQuestion": "האם ממתין לטיפול המכס או לגורמים אחרים?",
+    "packageStatusQuestion": "האם ממתין לטיפול המכס וגורמים הנלווים ?",
+    "packageHasConfirmation":"האם קיים אישור לשחרור החבילה ?",
     "packageStatusTitle": "סטטוס הפריט",
     "linksAreaTitle": "קישורים חשובים",
     "linksAreaSunTitle": "שיכולים לעזור לך",
+    
+    "cargoSearchLink":"מעקב משלוחים",
     "questionLink":"שאלות ותשובות",
     "calculatorLink":"מחשבון מיסים",
     "tutorialLink":"מדריך להזמנות מחול",
     "paymentLink":"תשלום מיסי יבוא",
     "taxRefundLink":"בקשה להחזר מיסים / ערעור",
     "contactLink":"דואר חבילות",
-    "cargoSearchLink":"מעקב משלוחים",
-    "informationLink":"מידע נוסף"
+    "paymentConfirmation": "אישור תשלום",
+    "backBtnText": " חזרה לחיפוש פריטים",
+    "errorMsg": ".ארעה שגיאה, אנא נסו מאוחר יותר",
+    "loadingMsg": "עוד רגע ונוכל להציג לך את הנתונים",
+    "appeal": "ערעור על תשלום המיסים"
+    
 }

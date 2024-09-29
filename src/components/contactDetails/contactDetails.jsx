@@ -1,24 +1,25 @@
-import React ,{useContext} from 'react'
+import React, { useContext } from 'react'
 import { packageContext } from '../../context/packageContext'
 import { useTranslation } from 'react-i18next'
 import './contactDetails.css'
-import { Link } from '@mui/material'
 
 
 
-export default function ContactDetails({ details }) {
+export default function ContactDetails() {
 
-  const {t} = useTranslation()
-  let {packageData, searchTime} = useContext(packageContext);
+  const { t } = useTranslation()
+  let { packageData, searchTime } = useContext(packageContext);
+  var packageDetails = packageData?.CargoResult[0];
 
 
   return (
     <div className='contactDetails'>
-      <h3>{t ("caringFactor")}</h3>
-      <p>{packageData?.contactDetails}</p>
-      <p>{packageData?.contactData.phone}</p>
-      <p>{t ("orBySite")}</p>
-      <p><Link href={packageData?.contactData?.site}>{packageData?.contactData.site}</Link></p>
+      <h3>{t("caringFactor")}</h3><br />
+      <p>{packageDetails?.contactDetails}</p>
+      <p>{packageDetails?.ContactDetails} {packageDetails?.ContactPhoneNumber}</p>
+      <p>{t("orBySite")} <a href={packageDetails?.ContactSite} target="_blank" style={{ color: '#0068F5' }}>
+        {packageDetails?.ContactSite}</a></p>
+
     </div>
   )
 }

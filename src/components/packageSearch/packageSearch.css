@@ -157,33 +157,48 @@
 }
 
 
-/* .iconContainer {
-  position: relative;שונה...
-}
-
-
 .cloudIcon {
   position: absolute;
   left: 35%;
-  top: -15%; */
-
+  top: -15%; 
+}
 
 .personGlobeIcon {
   position: relative;
 }
 
-/* 
-#subheadingShipmentTracking {
-  font-size: 18px;~
-  font-weight: 400;
-  line-height: 24px;
-  text-align: center;
-  color: #0C3058;
-  margin-bottom: 16px;
-} */
+.btnContainer {
+  width: 80%;
+  display: flex;
+  justify-content: start;
+  margin: 0 auto;
+  direction: rtl;
+
+  #backBtn {
+      background-color: transparent;
+      color: #0068F5;
+      border: none;
+      align-self: last baseline;
+  }
+}
+
+.btnContainer {
+  width: 80%;
+  display: flex;
+  justify-content: start;
+  margin: 0 auto;
+  direction: rtl;
+
+  #backBtn {
+      background-color: transparent;
+      color: #0068F5;
+      border: none;
+      align-self: last baseline;
+  }
+}
 
 /* .custom-link:before {
   content: '→'; /* החץ שיופיע לפני הטקסט של הלינק */
   /* margin-right: 8px; מרווח בין החץ לטקסט */
 /* } */
- /* */ 
+ /* */

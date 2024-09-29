@@ -4,19 +4,21 @@ import { Stack, TextField, Button, Box, Link, Typography } from '@mui/material';
 import Alert from '@mui/material/Alert';
 import InputAdornment from '@mui/material/InputAdornment';
 import './packageSearch.css';
-import ContactDetails from '../contactDetails/contactDetails';
-// import warningIcon from '../../icons/warningIcon';
-// import searchIcon from '../icons/searchIcon.jsx;'
+
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
-import WarningSign from '../../icons/warningSign';
+import WarningSign from '../../icons/warningSign'; import { getPackageStatus } from '../../api/dataService';
+import PackageDetails from '../packageDetails/packageDetails';
+import { CircularProgress } from '@mui/material';
+import Loading from '../loading/loading';
 
 
 export default function PackageSearch({ setContext }) {
   const { t } = useTranslation();
   const [packageNumber, setPackageNumber] = useState('');
   const [searchResult, setSearchResult] = useState(null);
-  
+
   const [error, setError] = useState(null);
+  const [loading, setLoading] = useState(false);
   const resultRef = useRef(null); // Ref לקומפוננטת התוצאות
 
   const handleChange = (event) => {
@@ -29,26 +31,35 @@ export default function PackageSearch({ setContext }) {
     }
   };
 
-  const search = () => {
-    var mockData = require('../../data/mockData.json');
-
-    const result = mockData.find((item) => item.declerationNumber === packageNumber);
-    if (result) {
-      setSearchResult(result);
-      setContext(result);
-
-
-      
-
-      setError(null);
-    } else {
+  const search = async () => {
+    try {
+      setLoading(true);
+      const result = await getPackageStatus(packageNumber);
+      if (result.CargoResult) {
+        setSearchResult(result);
+        setContext(result);
+        setError(null);
+      } else {
+        setSearchResult(null);
+        setContext(null);
+        setError(t("trackingNumberNotFound"));
+      }
+    } catch (err) {
       setSearchResult(null);
       setContext(null);
-      setError(t("trackingNumberNotFound"));
+      if (err.message !== 200) {
+        setError(t("errorMsg"))
+      }
+      else {
+        setError(err.message);
+      }
+    }
+    finally {
+      setLoading(false);
     }
   };
 
-  
+
   useEffect(() => {
     // גלול לקומפוננטת התוצאות כאשר searchResult מתעדכן
     if (searchResult && resultRef.current) {
@@ -59,99 +70,94 @@ export default function PackageSearch({ setContext }) {
 
   return (
     <div >
-      <div className="iconContainer">
-       
-      </div>
+      {(!searchResult) && (
+        <>
+          <div id="deliveryTrackingHeader">
+            {t("shippingTrackingTitle")}
+          </div>
 
-      <div id="deliveryTrackingHeader">
-        {t("shippingTrackingTitle")}
-      </div>
+          <br />
+          {!loading && (
+            <div>
+              <Stack spacing={-4} >
+                <div id="subheadingShipmentTracking">
+                  {t("subheadingShipmentTracking")}
+                </div>
 
-      <br />
+                <div id="subheadingShipmentTrackingB">
+                  {t("highlightedSubheadingShipmentTracking")}
+                </div>
+              </Stack>
+            </div>
+          )}
+          <br />
+          {!loading && (
+            <Box id="BoxContainer" display="flex" justifyContent="center">
+              <Stack
+                spacing={3}
+                direction="row"
+                justifyContent="space-between"
+                alignItems="center"
+                width="50%"
+              >
 
-      <Stack spacing={-4} >
-      <div id="subheadingShipmentTracking">
-        {t("subheadingShipmentTracking")}
-      </div>
+                <Button id="onclickSearch" variant="contained" onClick={search}>
+                  {t("search")}
+                </Button>
 
-      <div id="subheadingShipmentTrackingB">
-        {t("highlightedSubheadingShipmentTracking")}
-      </div>
-      </Stack>
-      
-      {/* <div id="SubheadingWithIsraelPostlink">
-       {t("SubheadingWithShipmentTrackingLink")}
-      </div> */}
-      
-      <br />
+                <TextField
+                  id="outlined-basic"
+                  className="TexstPadding"
+                  variant="outlined"
+                  placeholder={t("HereYouWriteTrackingTax")}
+                  value={packageNumber}
+                  onChange={handleChange}
+                  onKeyPress={handleKeyPress}
+                  maxRows={4}
+                  InputProps={{
+                    className: 'placeholderPadding',
+                    startAdornment: (
+                      <InputAdornment position="start">
+                        <SearchOutlinedIcon />
+                      </InputAdornment>
+                    ),
+                  }}
+               
+                />
 
-      <Box id="BoxContainer" display="flex" justifyContent="center">
-        <Stack
-          spacing={3}
-          direction="row"
-          justifyContent="space-between"
-          alignItems="center"
-          width="50%"
-        >
-          <Button id="onclickSearch" variant="contained" onClick={search}>
-            {t("search")}
-          </Button>
-
-          <TextField
-            id="outlined-basic"
-            className='TexstPadding'
-            // label={t("TitleInput")}
-            variant="outlined"
-            placeholder={t("HereYouWriteTrackingTax")}
-            value={packageNumber}
-            onChange={handleChange}
-            onKeyPress={handleKeyPress}
-            maxRows={4}
-            InputProps={{
-              className: 'placeholderPadding',
-              startAdornment: (
-                <InputAdornment position="start">
-                  <SearchOutlinedIcon />
-                </InputAdornment>
-              ),
-            }}
-            // InputProps={{
-            //   className: 'placeholderPadding',
-            // }}
-          />
-        </Stack>
-      </Box>
-
-     
-      {error && (
-        <div className="container">
-        <Alert
-         className="custom-alert"
-          severity="error"
-          icon={<WarningSign className='iconSpacing'/>}
-          // icon={<WarningIcon />}
-          sx={{ width: '100%', mt: 2 }}
-         >
-          <Typography>
-            {t("trackingNumberNotFound")}
-            <br />
-            {t("checkDetailsOrGoToTracking")}
-            <Link href="https://israelpost.co.il/%D7%9E%D7%A2%D7%A7%D7%91-%D7%9E%D7%A9%D7%9C%D7%95%D7%97%D7%99%D7%9D/" target="_blank" rel="noopener" sx={{ ml: 1 }}>
-            {t("goToTracking")}
-            </Link>
-          </Typography>
-        </Alert>
-        </div>
+              </Stack>
+            </Box>)
+          }
+        </>
       )}
-
-
-
-      {/* תצוגת קומפוננטת התוצאות עם גלילה אוטומטית */}
       {searchResult && (
-        <div ref={resultRef} className="searchResultContainer">
-          <packageInfo result={searchResult} />
-        </div>
+        <>
+          <PackageDetails />
+        </>
       )}
+
+      {loading ? (
+        <Loading />
+      ) : (error && (
+        <div className="container">
+          <Alert
+            className="custom-alert"
+            severity="error"
+            icon={<WarningSign className='iconSpacing' />}
+            sx={{ width: '100%', mt: 2 }}
+          >
+            <Typography>
+              {error}
+              {/* {t("trackingNumberNotFound")} */}
+              <br />
+              {t("checkDetailsOrGoToTracking")}
+              <Link href="https://israelpost.co.il/%D7%9E%D7%A2%D7%A7%D7%91-%D7%9E%D7%A9%D7%9C%D7%95%D7%97%D7%99%D7%9D/" target="_blank" rel="noopener" sx={{ ml: 1 }}>
+                {t("goToTracking")}
+              </Link>
+            </Typography>
+          </Alert>
+        </div>
+      ))}
     </div>
   );
 }
