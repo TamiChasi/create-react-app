@@ -2,9 +2,11 @@ import React, { useState, useRef, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Stack, TextField, Button, Box, Link, Typography } from '@mui/material';
 import Alert from '@mui/material/Alert';
+import InputAdornment from '@mui/material/InputAdornment';
 import './packageSearch.css';
-import WarningAmberIcon from '@mui/icons-material/WarningAmber'; // ייבוא האייקון
-import { getPackageStatus } from '../../api/dataService';
+
+import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
+import WarningSign from '../../icons/warningSign'; import { getPackageStatus } from '../../api/dataService';
 import PackageDetails from '../packageDetails/packageDetails';
 import { CircularProgress } from '@mui/material';
 import Loading from '../loading/loading';
@@ -14,6 +16,7 @@ export default function PackageSearch({ setContext }) {
   const { t } = useTranslation();
   const [packageNumber, setPackageNumber] = useState('');
   const [searchResult, setSearchResult] = useState(null);
+
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
   const resultRef = useRef(null); // Ref לקומפוננטת התוצאות
@@ -76,20 +79,22 @@ export default function PackageSearch({ setContext }) {
           <br />
           {!loading && (
             <div>
-              <div id="subheadingShipmentTracking">
-                {t("subheadingShipmentTracking")}
-              </div>
+              <Stack spacing={-4} >
+                <div id="subheadingShipmentTracking">
+                  {t("subheadingShipmentTracking")}
+                </div>
 
-              <div id="subheadingShipmentTrackingB">
-                {t("highlightedSubheadingShipmentTracking")}
-              </div>
+                <div id="subheadingShipmentTrackingB">
+                  {t("highlightedSubheadingShipmentTracking")}
+                </div>
+              </Stack>
             </div>
           )}
           <br />
           {!loading && (
             <Box id="BoxContainer" display="flex" justifyContent="center">
               <Stack
-                spacing={1}
+                spacing={3}
                 direction="row"
                 justifyContent="space-between"
                 alignItems="center"
@@ -103,7 +108,6 @@ export default function PackageSearch({ setContext }) {
                 <TextField
                   id="outlined-basic"
                   className="TexstPadding"
-                  label={t("TitleInput")}
                   variant="outlined"
                   placeholder={t("HereYouWriteTrackingTax")}
                   value={packageNumber}
@@ -112,7 +116,13 @@ export default function PackageSearch({ setContext }) {
                   maxRows={4}
                   InputProps={{
                     className: 'placeholderPadding',
+                    startAdornment: (
+                      <InputAdornment position="start">
+                        <SearchOutlinedIcon />
+                      </InputAdornment>
+                    ),
                   }}
+               
                 />
 
               </Stack>
@@ -133,7 +143,7 @@ export default function PackageSearch({ setContext }) {
           <Alert
             className="custom-alert"
             severity="error"
-            icon={<WarningAmberIcon />}
+            icon={<WarningSign className='iconSpacing' />}
             sx={{ width: '100%', mt: 2 }}
           >
             <Typography>

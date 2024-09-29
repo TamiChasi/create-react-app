@@ -29,6 +29,10 @@ export default function SearchPage() {
 
   }
 
+  useEffect(() => {
+    document.body.style.backgroundColor = '#f1f7ff';
+  }, []);
+   
   const backToSearch = () => {
     if (!packageData)
       setIsSearchVisible(!isSearchVisible);
@@ -36,6 +40,11 @@ export default function SearchPage() {
     setRerenderTrigger(prevKey => prevKey + 1);
     console.log('isSearchVisible', isSearchVisible);
   };
+
+  useEffect(() => {
+    document.body.style.backgroundColor = '#f1f7ff';
+  }, []);
+   
 
   return (
     <div key={rerenderTrigger} style={{ position: 'relative', minHeight: '100vh', backgroundSize: 'cover', backgroundImage: `url(${backgroundImage})`, height: '100%' }}>

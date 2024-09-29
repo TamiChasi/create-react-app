@@ -4,7 +4,7 @@
   line-height: 37.92px;
   text-align: center;
   color: #0c3058;
-  Font : "Rubik";
+  Font : "Rubik" !important;
 
 }
 
@@ -15,7 +15,8 @@
   line-height: 53px;
   text-align: center;
   color: #0C3058;
-  margin-bottom: 16px;
+  margin-bottom: 6px;
+  Font : "Rubik" !important;
 } 
 
 
@@ -26,6 +27,7 @@
   text-align: center;
   color: #0C3058;
   margin-bottom: 16px;
+  Font : "Rubik" !important;
 } 
 
 
@@ -33,27 +35,52 @@
   display: flex;
   justify-content: center; /* מרכז את האלמנט אופקית */
   align-items: center; /* מרכז את האלמנט אנכית */
-  height: 100vh; /* מוודא שהתצוגה תתפרש על כל הגובה של הדף */
-}
-
-
-
-.custom-alert {
-  width: 696px !important; 
-  height: 72px !important; 
-  top: 676px !important;
-  left: 361px !important;
-  padding: 16px 0 0 0 !important; 
-  gap: 0 !important;
-  border-radius: 8px 8px 8px 8px !important; 
-  border: 1px solid #99C2FB !important;
-  color: rgba(32, 66, 113, 1) !important;
-  background-color: #FFFFFF !important; 
-  display: flex!important;
-  justify-content: space-between !important; /* center טוב יותר אבל מזיז את הבחירה */
   
 }
 
+
+.container {
+  display: flex;
+
+  justify-content: center; /* מרכז את כל האלמנט אופקית */
+   
+  align-items: center; /* מרכז את כל האלמנט אנכית */
+}
+
+.custom-alert {
+  width: 696px !important;
+  padding: 16px !important;
+  height: 35px !important;
+  border-radius: 8px !important;
+  border: 1px solid #99C2FB !important;
+  background-color: #FFFFFF !important;
+  display: flex !important;
+  align-items: center !important; /* מרכז אנכית */
+  justify-content: center !important; /* מרחיק את האייקון מהטקסט */
+  text-align: center !important; /* מוודא שהטקסט עצמו מיושר */
+  flex-direction: row-reverse !important; /* ממקם את האייקון בצד ימין */
+  position: relative !important;
+  color: #0C3058 !important;
+
+}
+
+
+
+
+.iconSpacing {
+  position: absolute;
+  right: 0px !important; /* ממקם את האייקון בצד ימין */
+  top: 50%; /* ממקם את האייקון אנכית במרכז */
+  transform: translateY(-50%); /* ממרכז את האייקון אנכית */
+  padding-right: 100px;
+}
+
+
+.alert-text {
+  text-align: center !important;
+  width: 100%;
+  color: rgba(32, 66, 113, 1) !important;
+}
 
 .custom-link {
   color: #007BFF; /* צבע הכחול של הלינק */
@@ -68,44 +95,45 @@
   text-decoration: underline;
 }
 
-/* 
-#subheadingShipmentTracking {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 24px;
-  text-align: center;
-  color: #0C3058;
-  margin-bottom: 16px;
-} */
 
-/* .custom-link:before {
-  content: '→'; /* החץ שיופיע לפני הטקסט של הלינק */
-  /* margin-right: 8px; מרווח בין החץ לטקסט */
-/* } */
- /* */ 
 
 
 #outlined-basic {
-  width: 530px;
-  Height: 20px;
+  width: 538px;
+  Height: 48px;
   padding: 0px;
+  background-color: #FFFFFF !important; /* רקע לבן */
 }
 
+.TexstPadding {
+  width: 538px;
+  height: 48px;
+  background-color: #FFFFFF !important; /* רקע לבן */
+}
 
 .placeholderPadding {
-  padding: 10px; /* שוליים בפנים של האינפוט */
+  padding: 0px;
+  direction: rtl; /* שוליים בפנים של האינפוט */
+  background-color: #FFFFFF; /* רקע לבן */
+}
+
+.MuiAutocomplete-paper {
+  background-color: #FFFFFF !important; /* רקע לבן לתפריט ההשלמה */
+  border: 1px solid #000 !important;
 }
 
 .labelPadding {
-  padding-left: 10px; /* שוליים בקו האינפוט - משמאל */
-  padding-right: 10px; /* שוליים בקו האינפוט - מימין */
+  padding-left: 0px; /* שוליים בקו האינפוט - משמאל */
+  padding-right: 0px; /* שוליים בקו האינפוט - מימין */
 }
 
 
 #onclickSearch {
-  width: 138px;
-  Height: 40px;
+  width: 100px;
+  height:48px;
   background-color: #0068F5;
+  border-radius: 8px 8px 8px 8px;
+
 }
 
 .searchDiv {
@@ -121,14 +149,18 @@
   align-items: center;
 }
 
+
+
+
 .icon-search-container {
   display: block;
 }
 
+
 .cloudIcon {
   position: absolute;
   left: 35%;
-  top: -15%;
+  top: -15%; 
 }
 
 .personGlobeIcon {
@@ -150,3 +182,23 @@
   }
 }
 
+.btnContainer {
+  width: 80%;
+  display: flex;
+  justify-content: start;
+  margin: 0 auto;
+  direction: rtl;
+
+  #backBtn {
+      background-color: transparent;
+      color: #0068F5;
+      border: none;
+      align-self: last baseline;
+  }
+}
+
+/* .custom-link:before {
+  content: '→'; /* החץ שיופיע לפני הטקסט של הלינק */
+  /* margin-right: 8px; מרווח בין החץ לטקסט */
+/* } */
+ /* */

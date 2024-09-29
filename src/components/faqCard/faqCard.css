@@ -15,9 +15,15 @@
 }
 
 .faq-question {
-  color: rgba(12, 48, 88, 1);
+  color:#2B5287;
   font-weight: bold;
-  text-align: center 
+  text-align: center ;
+  Font : "Rubik";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23.43px;
+
+
 }
 
 .faq-details {
@@ -27,8 +33,12 @@
 
 
 .faq-answer {
-  color: rgba(12, 48, 88, 0.8);
+  color:#2B5287;
   text-align: right;
+  Font : "Rubik";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23.43px;
 }
 
 
