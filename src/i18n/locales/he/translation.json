@@ -1,0 +1,50 @@
+{
+    "welcome": "ברוכים הבאים לאפליקציה!",
+    "test": "בדיקה",
+    "packageDetailsTilte": "מידע על פריט ",
+
+    "shippingTrackingTitle": "מעקב משלוחים - אגף המכס",
+    
+    "subheadingShipmentTracking": "כתבו את מספר החבילה או המטען, ונציג לכם נתונים על המטען ומצב הטיפול מול המכס ",
+    
+    "highlightedSubheadingShipmentTracking": "או הרשות המוסמכת",
+    "HereYouWriteTrackingTax":"כאן מקלידים מספר מעקב למשלוח",
+
+    "trackingNumberNotFound": "לא הצלחנו למצוא את החבילה או המטען שחיפשת.",
+   "checkDetailsOrGoToTracking":"כדאי לבדוק שוב את הפרטים שכתבת או לנסות לעבור למעקב משלוחים.",
+    "goToTracking": "באתר דואר ישראל",
+    "search": "חיפוש",
+    "titleQuestions": "שאלות ששאלו אותנו",
+    "subheadingQuestions":"ואולי יעניין גם אותך",
+    "Add questions": "הצג שאלות נוספות",
+    "Show less questions": "הצג פחות",
+
+    "searchTimeTitle": "המידע עדכני ל: ",
+    "caringFactor": " גורם מטפל",
+    "israelPost": "דואר ישראל",
+    "orBySite": "או באתר:",
+    "taxesPaymentTilte": "קיים חוב לתשלום עבור הפריט ",
+    "taxesPaidTilte":"שולם {{taxesAmount}} ₪ בגין שחרור החבילה",
+    "payImportTaxes": "מעבר לתשלום",
+    "apealImportTaxes": "ערעור על תשלום מיסים",
+    "packageTimelineTilte": "שלבי הטיפול בפריט",
+    "packageStatusQuestion": "האם ממתין לטיפול המכס וגורמים הנלווים ?",
+    "packageHasConfirmation":"האם קיים אישור לשחרור החבילה ?",
+    "packageStatusTitle": "סטטוס הפריט",
+    "linksAreaTitle": "קישורים חשובים",
+    "linksAreaSunTitle": "שיכולים לעזור לך",
+    
+    "cargoSearchLink":"מעקב משלוחים",
+    "questionLink":"שאלות ותשובות",
+    "calculatorLink":"מחשבון מיסים",
+    "tutorialLink":"מדריך להזמנות מחול",
+    "paymentLink":"תשלום מיסי יבוא",
+    "taxRefundLink":"בקשה להחזר מיסים / ערעור",
+    "contactLink":"דואר חבילות",
+    "paymentConfirmation": "אישור תשלום",
+    "backBtnText": " חזרה לחיפוש פריטים",
+    "errorMsg": ".ארעה שגיאה, אנא נסו מאוחר יותר",
+    "loadingMsg": "עוד רגע ונוכל להציג לך את הנתונים",
+    "appeal": "ערעור על תשלום המיסים"
+    
+}

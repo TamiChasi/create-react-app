@@ -1,0 +1,52 @@
+[
+    {
+        "computedCargoIdentifierKey": "שטר מטען בלדר יבוא מס' שט\"מ בלדר ILI00009035PPIL ח.פ. בלדר:516171428 תאריך הקמה:260324",
+        "arrivalDate": "2024-03-28T00:00:00",
+        "customsHouse": "מרכז",
+        "status": "בתהליך שחרור מהמכס",
+        "userFrandlyStatus": "ההצהרה הותרה בתאריך 28/03/2024 18:47:04 המשמעות היא שמתאריך זה אין עיכובים של המכס על המטען ו המעגל הגדול (ג'יסי) בע\"מ רשאית להעביר את המטען ליעד הסופי שלו ,<br>לברור לגבי צפי הגעת המטען ליעד הסופי ניתן לפנות ל המעגל הגדול (ג'יסי) בע\"מ",
+        "declerationNumber": "2404555555660",
+        "isSubmit": true,
+        "isLanding": true,
+        "isRelease": true,
+        "isDebt": false,
+        "contactDetails": "המעגל הגדול (ג'יסי) בע\"מ",
+        "contactData": {
+            "phone": "180080080",
+            "site": "https://israelpost.co.il"
+        }
+    },
+    {
+        "computedCargoIdentifierKey": "שטר מטען בלדר יבוא מס' שט\"מ בלדר TMU09185389306 ח.פ. בלדר:515308906 תאריך הקמה:190324",
+        "arrivalDate": "2024-03-25T15:46:28",
+        "customsHouse": "נתב\"ג",
+        "status": "בתהליך שחרור מהמכס",
+        "userFrandlyStatus": "ההצהרה הותרה בתאריך 25/03/2024 15:50:51 המשמעות היא שמתאריך זה אין עיכובים של המכס על המטען ו געש וורלדווייד בע\"מ רשאית להעביר את המטען ליעד הסופי שלו ,<br>לברור לגבי צפי הגעת המטען ליעד הסופי ניתן לפנות ל געש וורלדווייד בע\"מ",
+        "declerationNumber": "24045555555089",
+        "isSubmit": true,
+        "isLanding": true,
+        "isRelease": true,
+        "isDebt": false,
+        "contactDetails": "געש וורלדווייד בע\"מ",
+        "contactData": {
+            "phone": "1800-800-80",
+            "site": "https://israelpost.co.il"
+        }
+    },
+    {
+        "computedCargoIdentifierKey": "שטר מטען בלדר יבוא מס' שט\"מ בלדר GAIH50256104 ח.פ. בלדר:515308906 תאריך הקמה:040324",
+        "customsHouse": "נתב\"ג",
+        "status": "הוגש ממתין להתרה",
+        "userFrandlyStatus": "המטען טרם הגיע לארץ, ניתן להתחיל בתהליך הגשת הצהרה, אך לא יהיה ניתן לסיים את התהליך לפני הגעת המטען.<br>באחריות געש וורלדווייד בע\"מ לעדכן את המכס ברגע שהמטען הגיע לארץ, לאחר מכן ניתן לסיים את התהליך.",
+        "declerationNumber": "24043173579776",
+        "isSubmit": true,
+        "isLanding": false,
+        "isRelease": false,
+        "isDebt": false,
+        "contactDetails": "געש וורלדווייד בע\"מ",
+        "contactData": {
+            "phone": "1800-800-80",
+            "site": "https://israelpost.co.il"
+        }
+    }
+]

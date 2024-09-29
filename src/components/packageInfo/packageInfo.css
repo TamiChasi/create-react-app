@@ -1,0 +1,26 @@
+.packageInfoContainer {
+    border: 1px solid #D7DDE4;
+    border-radius: 10px;
+    width: 80% !important;
+    height: 100% !important;
+    background-color: #FFFFFF;
+    align-items: center;
+    display: flex;
+    padding: 15px;
+    padding-bottom: 0 !important;
+    align-items: center;
+    display: flex;
+    color: #C3CFE7;
+    justify-content: center;
+}
+
+div.MuiDivider-root {
+    padding-top: 20px;
+    border-color: rgba(43, 82, 135, 0.4);
+    border-bottom-width: 1px;
+}
+
+.packageInfo .packageInfoContainer .MuiBox-root {
+    direction: rtl;
+    display: flex;
+}

@@ -1,0 +1,46 @@
+.taxContainer {
+   display: flex;
+   margin: 5px 5px 5px 5px !important;
+
+   .taxesPayment {
+      text-align: right;
+      direction: rtl;
+      color: rgba(12, 48, 88, 1);
+      margin: 5px 30px 5px 5px !important;
+
+
+   }
+
+   .taxesPayment .MuiButton-contained {
+      margin: 10px 0;
+      width: 120px;
+      background-color: rgba(32, 66, 113, 1);
+
+   }
+
+   .taxesPayment .MuiButton-outlined {
+      margin: 10px 0;
+      width: 120px;
+      color: rgba(32, 66, 113, 1);
+
+   }
+
+
+   .taxesPayment h3 {
+      margin: 0;
+   }
+
+   .taxesPayment p {
+      margin: unset;
+   }
+
+}
+
+.btnStyle {
+   background-color: #0068F5 !important;
+   border-radius: 8px;
+}
+
+.linkStyle {
+   color: #0068F5;
+}

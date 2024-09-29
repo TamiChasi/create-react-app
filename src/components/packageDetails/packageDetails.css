@@ -1,0 +1,22 @@
+.packageDetails {
+    text-align: center;
+    direction: rtl;
+    color: #0C3058;
+
+    h2 {
+        margin-bottom: unset;
+    }
+
+    h3 {
+        margin-bottom: unset;
+        size: 32px;
+        font-weight: 500;
+    }
+
+    p {
+        color: #687E97;
+        size: 16px;
+        font-weight: 400;
+        margin: unset;
+    }
+}

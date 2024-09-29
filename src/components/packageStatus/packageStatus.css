@@ -1,0 +1,51 @@
+.packageStatus .MuiBox-root {
+    background-color: rgba(242, 246, 252, 1);
+    height: auto;
+    width: 300px;
+    min-height: 80px;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.packageStatus {
+    width: 45%;
+    color: rgba(12, 48, 88, 1);
+    text-align: right;
+    direction: rtl;
+    margin-right: 20px;
+
+    .linkStyle {
+        text-decoration: none;
+        color: #0068F5;
+        ;
+    }
+
+    .textBox {
+        background-color: #FFFFFF !important;
+        border: 1px solid;
+        border-color: #BBBBCB;
+        border-radius: 8px !important;
+        flex-wrap: wrap;
+        overflow: hidden;
+        padding: 15px;
+        text-align: right;
+        display: flex;
+        align-items: flex-start;
+        width: 85%;
+
+    }
+
+    .confirmBox {
+        min-height: 17px;
+    }
+
+    .paragraphStyle {
+        text-align: right;
+        color: #0C3058;
+        margin: 0;
+        width: 100%;
+    }
+
+}
