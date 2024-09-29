@@ -69,7 +69,7 @@
 
 .iconSpacing {
   position: absolute;
-  right: 20px !important; /* ממקם את האייקון בצד ימין */
+  right: 0px !important; /* ממקם את האייקון בצד ימין */
   top: 50%; /* ממקם את האייקון אנכית במרכז */
   transform: translateY(-50%); /* ממרכז את האייקון אנכית */
   padding-right: 100px;
