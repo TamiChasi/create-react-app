@@ -21,7 +21,7 @@ export default function TaxesPayment() {
     <div className='taxContainer'>
       {taxesAmount === 0 ? null : (
         <>
-          <Divider orientation="vertical" variant="middle" flexItem sx={{ border: 1, margin: 0 }} />
+          <Divider orientation="horizontal" variant="middle" flexItem sx={{ border: 1, margin: 0 }} />
           {taxesAmount === paidTaxesAmount ? (
             <div className='taxesPayment'>
               <h3>{t("taxesPaidTilte", { taxesAmount })}</h3>
