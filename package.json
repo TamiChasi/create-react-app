@@ -1,6 +1,7 @@
 {
   "name": "create-react-app",
   "version": "0.1.0",
+  "proxy": "https://shaarolami-query.customs.mof.gov.il",
   "private": true,
   "dependencies": {
     "@babel/runtime": "^7.25.6",
