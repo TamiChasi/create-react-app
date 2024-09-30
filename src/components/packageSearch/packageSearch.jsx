@@ -76,9 +76,9 @@ export default function PackageSearch({ setContext }) {
             {t("shippingTrackingTitle")}
           </div>
 
-          <br />
+          <br className='hide-on-mobile'/>
           {!loading && (
-            <div>
+            <div className='textContainer'>
               <Stack spacing={-4} >
                 <div id="subheadingShipmentTracking">
                   {t("subheadingShipmentTracking")}
@@ -90,10 +90,10 @@ export default function PackageSearch({ setContext }) {
               </Stack>
             </div>
           )}
-          <br />
+          <br className='hide-on-mobile'/>
           {!loading && (
             <Box id="BoxContainer" display="flex" justifyContent="center">
-              <Stack
+              <Stack className='searchStackContainer'
                 spacing={3}
                 direction="row"
                 justifyContent="space-between"
