@@ -5,5 +5,15 @@
     line-height: 28px;
     text-align: center;
     color: #0C3058;
+
+    h2{
+        font-size: 20px;
+        margin: 0;
+    }
+
+    p{
+        font-size: 16px;
+        margin: 0;
+    }
 }
 

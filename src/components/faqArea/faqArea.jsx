@@ -1,10 +1,11 @@
-import React, { useState , useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import { faqData } from '../../static/faqData.js';
 import './faqArea.css';
 import { Button, Container, Typography } from '@mui/material';
 import SeparatorIcon from '../../icons/saperatorIcon.jsx';
 import FaqCard from '../faqCard/faqCard.jsx'
 import { useTranslation } from 'react-i18next';
+import '../../assets/styles.css'
 
 export default function FaqArea() {
   const { t } = useTranslation();
@@ -19,7 +20,7 @@ export default function FaqArea() {
     setShowAll(true);
   };
 
- 
+
   const handleShowLess = () => {
     setShowAll(false);
     // גלילה חזרה לכותרת כשהמשתמש לוחץ על "הצג פחות שאלות"
@@ -33,18 +34,18 @@ export default function FaqArea() {
   return (
     <Container>
       <Typography ref={titleRef} variant="h5" className="faq-title">
-       <div id="titleQuestions">
-        {t("titleQuestions")}
-       </div>
-        </Typography>
-      <br></br>
+        <div id="titleQuestions">
+          {t("titleQuestions")}
+        </div>
+      </Typography>
+      {/* <br className='hide-on-mobile'></br> */}
 
       <div id="subheadingQuestions">
-      {t("subheadingQuestions")}
+        {t("subheadingQuestions")}
       </div>
 
       <SeparatorIcon />
-      <br />
+      {/* <br className='hide-on-mobile' /> */}
       <div className='faqAreaDiv' >
         {displayedFaqs.map((item, index) => (
           <FaqCard key={index} question={item.question} answer={item.answer} />
@@ -57,13 +58,13 @@ export default function FaqArea() {
             {t("Add questions")}
           </Button>
         )}
-         
+
         {showAll && (
           <Button onClick={handleShowLess} id="onClickQuestions">
             {t("Show less questions")}
           </Button>
         )}
-        </div>
+      </div>
 
       {/* {!showAll && faqData.length > 3 && (
         <div className="show-more-container">

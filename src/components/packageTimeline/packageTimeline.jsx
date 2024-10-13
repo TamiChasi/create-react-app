@@ -11,6 +11,7 @@ import TimelineContent, { timelineContentClasses } from '@mui/lab/TimelineConten
 import './packageTimeline.css'
 import { useTranslation } from 'react-i18next';
 import PackageIcon from '../../icons/packageIcon';
+import { Visibility } from '@mui/icons-material';
 
 
 
@@ -43,6 +44,7 @@ export default function PackageTimeline() {
           <TimelineItem key={'timelineItem' + index}>
             <TimelineOppositeContent className='maxwidth'>
               {status.title}
+              <div className='hide-on-desktop dateStyle' style={{ display: status.active ? 'block' : 'none'}}>{status.date}</div>
             </TimelineOppositeContent>
             <TimelineSeparator >
               { status.active && <TimelineDot>
@@ -53,7 +55,7 @@ export default function PackageTimeline() {
               </TimelineDot> }
               { index!= statusArr.length-1 && <TimelineConnector />}
             </TimelineSeparator>
-            <TimelineContent>{status.date}</TimelineContent>
+            <TimelineContent className='hide-on-mobile' style={{ visibility: status.active ? 'visible' : 'hidden' }}            >{status.date}</TimelineContent>
           </TimelineItem>
         ))}
       </Timeline>
