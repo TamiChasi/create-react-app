@@ -4,14 +4,12 @@
     width: 80% !important;
     height: 100% !important;
     background-color: #FFFFFF;
-    align-items: center;
-    display: flex;
     padding: 15px;
-    padding-bottom: 0 !important;
     align-items: center;
     display: flex;
     color: #C3CFE7;
-    justify-content: center;
+    justify-content: start;
+    direction: rtl;
 }
 
 div.MuiDivider-root {
@@ -23,4 +21,28 @@ div.MuiDivider-root {
 .packageInfo .packageInfoContainer .MuiBox-root {
     direction: rtl;
     display: flex;
+
+    @media only screen and (max-width: 600px) {
+        max-width: 100%;
+    }
+
+    /* .MuiStack-root{
+        @media only screen and (max-width: 600px) {
+            min-width: 90%;
+        }
+    } */
+}
+
+.packageInfoBox {
+    flex-direction: row;
+    margin-bottom: 20px;
+
+    @media only screen and (max-width: 600px) {
+        flex-direction: column;
+    }
+}
+
+.verticalDevider {
+    padding-top: 0 !important;
+    border-color: #C3CFE7 !important;
 }

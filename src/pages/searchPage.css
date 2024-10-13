@@ -1,0 +1,13 @@
+.mainSearchContainer {
+    position: relative;
+    background-size: cover !important;
+    background: url('../../src/images/background.png');
+    height: 100%;
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    .mainSearchContainer{
+        background: url('../../src/images/backgroundMobile.png');
+    }
+}

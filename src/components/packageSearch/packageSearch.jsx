@@ -1,16 +1,17 @@
 import React, { useState, useRef, useEffect } from 'react';
+import '../../assets/styles.css';
 import { useTranslation } from 'react-i18next';
 import { Stack, TextField, Button, Box, Link, Typography } from '@mui/material';
 import Alert from '@mui/material/Alert';
+
 import InputAdornment from '@mui/material/InputAdornment';
 import './packageSearch.css';
-
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
-import WarningSign from '../../icons/warningSign'; import { getPackageStatus } from '../../api/dataService';
+import WarningSign from '../../icons/warningSign';
+import { getPackageStatus } from '../../api/dataService';
 import PackageDetails from '../packageDetails/packageDetails';
-import { CircularProgress } from '@mui/material';
 import Loading from '../loading/loading';
-
+import '../../assets/styles.css'
 
 export default function PackageSearch({ setContext }) {
   const { t } = useTranslation();
@@ -34,7 +35,7 @@ export default function PackageSearch({ setContext }) {
   const search = async () => {
     try {
       setLoading(true);
-      const result = await getPackageStatus(packageNumber);
+       const result = await getPackageStatus(packageNumber);
       if (result.CargoResult) {
         setSearchResult(result);
         setContext(result);
@@ -69,14 +70,13 @@ export default function PackageSearch({ setContext }) {
 
 
   return (
-    <div >
+    <div className='packageSearchContainer'>
       {(!searchResult) && (
         <>
           <div id="deliveryTrackingHeader">
             {t("shippingTrackingTitle")}
           </div>
 
-          <br className='hide-on-mobile'/>
           {!loading && (
             <div className='textContainer'>
               <Stack spacing={-4} >
@@ -90,9 +90,8 @@ export default function PackageSearch({ setContext }) {
               </Stack>
             </div>
           )}
-          <br className='hide-on-mobile'/>
           {!loading && (
-            <Box id="BoxContainer" display="flex" justifyContent="center">
+            <Box id="boxContainer" display="flex" justifyContent="center">
               <Stack className='searchStackContainer'
                 spacing={3}
                 direction="row"
@@ -122,7 +121,7 @@ export default function PackageSearch({ setContext }) {
                       </InputAdornment>
                     ),
                   }}
-               
+
                 />
 
               </Stack>
@@ -139,7 +138,7 @@ export default function PackageSearch({ setContext }) {
       {loading ? (
         <Loading />
       ) : (error && (
-        <div className="container">
+        <div className="errorContainer">
           <Alert
             className="custom-alert"
             severity="error"

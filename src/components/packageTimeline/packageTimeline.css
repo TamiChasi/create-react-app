@@ -4,6 +4,11 @@
     direction: ltr;
     margin: 5px 5px 5px 30px;
 
+    @media only screen and (max-width: 600px){
+        width: 100%;
+        margin: 0;
+    }
+
     .MuiTimelineDot-root {
         margin: 0px;
         background-color: #0056D7;
@@ -22,4 +27,13 @@
     .MuiTimeline-root {
         color: #2B5287;
     }
+}
+
+.dateStyle{
+    font-size: 12px;
+    color: #287AE99E;
+}
+
+.linkStyle .MuiTypography-root{
+    padding: 0px 10px 0 0 !important;
 }

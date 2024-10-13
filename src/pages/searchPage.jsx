@@ -2,11 +2,8 @@ import React, { useEffect, useState } from 'react'
 import PackageSearch from '../components/packageSearch/packageSearch'
 import PackageInfo from '../components/packageInfo/packageInfo'
 import { packageContext } from '../context/packageContext'
-import LinksArea from '../components/linksArea/linksArea'
 import FaqArea from '../components/faqArea/faqArea'
-import FaqCard from '../components/faqCard/faqCard'
-import ScreenBackgroundIcon from '../icons/screenBackgroundIcone'
-import backgroundImage from '../images/background.png'
+import './searchPage.css'
 import { Button } from '@mui/material'
 import { useTranslation } from 'react-i18next'
 
@@ -47,7 +44,7 @@ export default function SearchPage() {
    
 
   return (
-    <div key={rerenderTrigger} style={{ position: 'relative', minHeight: '100vh', backgroundSize: 'cover', backgroundImage: `url(${backgroundImage})`, height: '100%' }}>
+    <div className='mainSearchContainer' key={rerenderTrigger}>
 
       <packageContext.Provider value={{ packageData, searchTime: new Date() }}>
         <div className="content-container">
@@ -70,7 +67,7 @@ export default function SearchPage() {
 
           <br />
           <FaqArea></FaqArea>
-          <br /><br />
+          <br className='hide-on-mobile'/><br className='hide-on-mobile'/>
         </div>
       </packageContext.Provider>
     </div>
