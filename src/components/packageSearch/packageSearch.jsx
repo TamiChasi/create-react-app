@@ -79,14 +79,22 @@ export default function PackageSearch({ setContext }) {
       {!searchResult && (
         <>
           <div id="deliveryTrackingHeader">{t("shippingTrackingTitle")}</div>
+          <div id="subheadingShipmentTracking">
+            {t("subheadingShipmentTracking")}
+          </div>
+
+          <div id="subheadingShipmentTrackingB">
+            {t("highlightedSubheadingShipmentTracking")}
+          </div>
+
           {!loading && (
             <Box id="boxContainer" display="flex" justifyContent="center">
               <Stack
                 spacing={3}
                 direction="row"
-                justifyContent="space-between"
+                justifyContent="center"
                 alignItems="center"
-                width="50%"
+                width="100% !important"
               >
                 <Button
                   id="onclickSearch"
@@ -107,7 +115,9 @@ export default function PackageSearch({ setContext }) {
                         <SearchOutlinedIcon />
                       </InputAdornment>
                     ),
+                    style: { textAlign: "right", backgroundColor: "white" },
                   }}
+                  sx={{ direction: "rtl" }}
                 />
               </Stack>
             </Box>
