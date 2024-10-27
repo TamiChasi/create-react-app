@@ -148,13 +148,6 @@ input:-webkit-autofill {
   display: block;
 }
 
-
-.cloudIcon {
-  position: absolute;
-  left: 35%;
-  top: -15%;
-}
-
 .personGlobeIcon {
   position: relative;
 }
@@ -195,5 +188,5 @@ input:-webkit-autofill {
 }
 
 #boxContainer{
-  width: 100%;
+  width: 90%  !important;
 }
