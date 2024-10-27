@@ -7,8 +7,6 @@ import Alert from "@mui/material/Alert";
 import InputAdornment from "@mui/material/InputAdornment";
 import "./packageSearch.css";
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
-import WarningSign from "../../icons/warningSign";
-import { getPackageStatus } from "../../api/dataService";
 import PackageDetails from "../packageDetails/packageDetails";
 import Loading from "../loading/loading";
 import "../../assets/styles.css";
