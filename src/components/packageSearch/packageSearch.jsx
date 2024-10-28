@@ -35,29 +35,32 @@ export default function PackageSearch({ setContext }) {
     },
   });
 
-  const handleKeyPress = (event) => {
+  const handleInputChange = (event) => {
     setPackageNumber(event.target.value);
+  };
+
+  const handleKeyDown = (event) => {
     if (event.key === "Enter") {
-      handleSearch(event.key);
+      event.preventDefault();
+      handleSearch();
     }
   };
 
-  const handleSearch = (key) => {
-    if (packageNumber.trim() && (key === "Enter" || key  === null)) {
+  const handleSearch = () => {
+    if (packageNumber.trim()) {
       setSearchInitiated(true);
       setError(null);
     }
   };
-
   useEffect(() => {
     if (searchInitiated)
-    refetch(url, {
-      token,
-      params,
-      headers: {
-        Authorization: `Bearer ${token}`,
-      },
-    });
+      refetch(url, {
+        token,
+        params,
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      });
 
     if (searchInitiated && data) {
       if (data.CargoResult) {
@@ -70,6 +73,7 @@ export default function PackageSearch({ setContext }) {
         setError(t("trackingNumberNotFound"));
       }
     }
+
     if (searchResult && resultRef.current) {
       resultRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
     }
@@ -110,7 +114,8 @@ export default function PackageSearch({ setContext }) {
                   variant="outlined"
                   value={packageNumber}
                   placeholder={t("HereYouWriteTrackingTax")}
-                  onChange={handleKeyPress}
+                  onKeyDown={handleKeyDown}
+                  onChange={handleInputChange}
                   InputProps={{
                     startAdornment: (
                       <InputAdornment position="start">

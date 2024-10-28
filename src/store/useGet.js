@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from "react"
+import { useCallback, useState } from "react"
 import axios from "axios"
 
 
@@ -75,9 +75,6 @@ const useGet = (url, { token, params = {}, headers = {} } = {}) => {
         }
     });
 
-    useEffect(() => {
-        fetchData();
-    }, [fetchData]);
     return { data, error, loading, refetch: fetchData };
 };
 
