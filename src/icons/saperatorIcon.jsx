@@ -1,6 +1,6 @@
 import React from 'react';
 
-// קו מפריד
+
 function SaperatorIcon() {
     return (
         <div style={{ paddingBottom: '25px' }}>

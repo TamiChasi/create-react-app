@@ -2,11 +2,20 @@
     "welcome": "Welcome to my app!",
     "test": "this is test",
     "packageDetailsTilte": "Information for package num. ",
+    "subheadingShipmentTracking":"",
     "shippingTrackingTitle": "Shipment tracking - Customs Department",
     "shipmentTrackingSecondaryTitle": "Current information on shipments sent from abroad by sea/air/land delivery",
     "highlightedSubheadingShipmentTracking": "When entering a package/cargo number, data will be displayed about the cargo and the handling status with the customs/certifying authority.",
     "Search": "Search",
     "HereYouWriteTrackingTax": "Here you write tracking tax",
+    "trackingNumberNotFound": "We could not find the package or luggage you were looking for.",
+  
+    "goToTracking": "On the Israel Post website",
+    "Add questions": "Show more questions",
+    "titleQuestions": "Questions we were asked",
+    "subheadingQuestions":"And maybe it will interest you too",
+    "Show less questions": "show less",
+    
     "TitleInput": "tracking tax",
     "searchTimeTitle": "The Information is update for:",
     "caringFactor": "Caring factor",
@@ -36,3 +45,8 @@
     "errorMsg": "Error occured, please try later.",
     "loadingMsg": "Just a moment and we can show you the data"
 }
+
+   
+    
+
+  

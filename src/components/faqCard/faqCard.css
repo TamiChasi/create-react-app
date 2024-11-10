@@ -1,26 +1,29 @@
 .faq-card {
   margin-bottom: 10px;
   border: 1px solid rgba(43, 82, 135, 0.5);
-  border-radius: 10px !important;
+  border-radius: 8px !important;
   max-width: 904px;
-  width: 100%;
-  /* Ensures the accordion takes up the full width up to max-width */
-  margin: 0 auto !important;
-  /* Center the accordion horizontally */
+  width: 100%; 
+  margin: 0 auto !important; 
   text-align: center;
+  position: static !important;
+  
 }
 
 .expand-icon {
-  color: rgba(43, 82, 135, 1);
-  /* הגדרת צבע החץ */
-  border: 2.5px;
-}
+  font-size: 30px !important; 
+  color: rgba(43, 82, 135, 1) !important; 
+  opacity: 1 !important;
+  transition: all 0.3s ease !important; 
+ }
+
+ 
 
 .faq-question {
   color: #2B5287;
   font-weight: bold;
-  text-align: center;
-  Font: "Rubik";
+  text-align: center ;
+  Font : "Rubik" !important;
   font-size: 16px;
   font-weight: 400;
   line-height: 23.43px;
@@ -29,17 +32,15 @@
 }
 
 .faq-details {
-  border-top: 1px solid #ccc;
-  /* קו מפריד בין השאלה לתשובה */
-  padding-top: 0px;
-  /* מרווח נוסף מעל הקו אם רוצים */
+  border-top: 1px solid #ccc; 
+  padding-top: 0px; 
 }
 
 
 .faq-answer {
   color: #2B5287;
   text-align: right;
-  Font: "Rubik";
+  Font :  "Rubik" !important;
   font-size: 16px;
   font-weight: 400;
   line-height: 23.43px;

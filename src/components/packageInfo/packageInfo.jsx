@@ -19,8 +19,8 @@ export default function PackageInfo() {
       <Container className='packageInfoContainer'>
         <Box>
           <Stack
-            direction={{ xs: 'column', sm: 'row' }} // column on phone, row on larger screens
-            spacing={2} // Space between the elements
+            direction={{ xs: 'column', sm: 'row' }} 
+            spacing={2} 
             alignItems="center"
           >
             <ContactDetails />

@@ -1,13 +1,7 @@
 
 export const link_Data =
   [
-    // {
-    //   "icon": "CalculatorIcon",
-    //   "title": "questionLink",
-    //   "description": "",
-    //   "link": "https://www.gov.il/he/departments/informationtype/?OfficeId=c0d8ba69-e309-4fe5-801f-855971774a90&topic=166c6678-1f00-4ac9-9997-6a8f0d9727ae&limit=10&UnitId=961d2b41-ab18-4939-9955-9a9eed8335bc&informationType=generalpage&skip=0"
-    // },
-
+   
     {
       "icon": "CalculatorIcon",
       "title": "calculatorLink",

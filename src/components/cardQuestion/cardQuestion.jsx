@@ -6,14 +6,7 @@ export default function cardQuestion ({  }) {
  
   const { t } = useTranslation();
 
-  return (
-
-
-      );
 
 }
-
-
-
 
 

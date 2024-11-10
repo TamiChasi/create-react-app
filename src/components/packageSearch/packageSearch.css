@@ -66,13 +66,23 @@
   background-color: #FFFFFF !important;
   display: flex !important;
   align-items: center !important;
-  justify-content: center !important;
+  justify-content: flex-start !important;
   text-align: center !important;
-  flex-direction: row-reverse !important;
+  flex-direction: row !important;
   position: relative !important;
   color: #0C3058 !important;
+  direction:rtl;
+  gap:1rem;
 
 }
+
+.custom-alert p {
+  text-align: right;
+  line-height: normal;
+}
+
+.custom-alert p a  {margin-right:0.5rem;}
+.custom-alert p a svg  {margin-right:0.35rem;}
 
 input:-webkit-autofill {
   background-color: white !important;
@@ -166,6 +176,8 @@ input:-webkit-autofill {
     align-self: last baseline;
   }
 }
+
+
 
 @media only screen and (max-width: 600px) {
   .searchStackContainer {

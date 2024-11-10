@@ -29,6 +29,26 @@
     "react-scripts": "^5.0.1",
     "web-vitals": "file:packages/web-vitals-4.0.1.tgz"
   },
+
+  "overrides": {
+    "@babel/traverse": "^7.24.5",
+    "domelementtype": "^2.0.0",
+    "@wyw-in-js/processor-utils": "^0.5.3",
+    "@wyw-in-js/shared": "^0.5.3",
+    "@wyw-in-js/transform": "^0.5.3",
+    "deepmerge": "^4.3.1",
+    "object.omit": "^2.0.1",
+    "entities": "^2.2.0",
+    "webidl-conversions": "^6.1.0",
+    "whatwg-encoding": "^1.0.5",
+    "whatwg-mimetype": "^2.3.0",
+    "@floating-ui/react-dom": "^2.1.0",
+    "@mui/utils": "^6.0.0",
+    "@pigment-css/react": "^0.0.20",
+    "@mui/material-pigment-css": "^6.0.2",
+    "@babel/plugin-transform-optional-chaining":"^7.24.5",
+    "form-data": "^3.0.0"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

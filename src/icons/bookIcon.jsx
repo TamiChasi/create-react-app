@@ -1,5 +1,5 @@
 import React from 'react';
-//מידע נוסף
+
 
  function BookIcon() {
     return (

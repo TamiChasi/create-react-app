@@ -12,7 +12,7 @@ export default function FaqArea() {
   const [showAll, setShowAll] = useState(false);
   const displayedFaqs = showAll ? faqData : faqData.slice(0, 3);
 
-  // יצירת ref לכותרת
+ 
   const titleRef = useRef(null);
 
 
@@ -23,7 +23,7 @@ export default function FaqArea() {
 
   const handleShowLess = () => {
     setShowAll(false);
-    // גלילה חזרה לכותרת כשהמשתמש לוחץ על "הצג פחות שאלות"
+   
     if (titleRef.current) {
       titleRef.current.scrollIntoView({ behavior: 'smooth' });
     }
@@ -66,13 +66,7 @@ export default function FaqArea() {
         )}
       </div>
 
-      {/* {!showAll && faqData.length > 3 && (
-        <div className="show-more-container">
-          <Button onClick={handleShowMore} id="onClickQuestions">
-            {t("Add questions")}
-          </Button>
-        </div>
-      )} */}
+     
       <br />
       <br />
     </Container>
