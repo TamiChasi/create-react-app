@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Card, CardMedia, CardContent, Link, Typography } from '@mui/material';
 import './linkCard.css'
-import iconComponents from './icons'; // Adjust the import path as needed
+import iconComponents from './icons'; 
 import { useTranslation } from 'react-i18next';
 
 export default function LinkCard({ icon, title, description, link }) {
@@ -16,7 +16,7 @@ export default function LinkCard({ icon, title, description, link }) {
           <CardContent className='card-link-description' >
             <br></br>
             {t(title)}
-            <Typography variant="body2" color="text.secondary" >{description} </Typography>
+            <Typography variant="body2" color="text.secondary" className="class-description">{description} </Typography>
           </CardContent>
         </Link>
       </Card>

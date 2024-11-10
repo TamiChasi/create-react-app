@@ -6,11 +6,12 @@ import InputAdornment from '@mui/material/InputAdornment';
 import './packageSearch.css';
 
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
-import WarningSign from '../../icons/warningSign'; import { getPackageStatus } from '../../api/dataService';
+import WarningSign from '../../icons/warningSign';
+import { getPackageStatus } from '../../api/dataService';
 import PackageDetails from '../packageDetails/packageDetails';
 import { CircularProgress } from '@mui/material';
 import Loading from '../loading/loading';
-
+import ArrowIcon from '../../icons/arrowIcon';
 
 export default function PackageSearch({ setContext }) {
   const { t } = useTranslation();
@@ -19,7 +20,7 @@ export default function PackageSearch({ setContext }) {
 
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
-  const resultRef = useRef(null); // Ref לקומפוננטת התוצאות
+  const resultRef = useRef(null); 
 
   const handleChange = (event) => {
     setPackageNumber(event.target.value);
@@ -61,7 +62,6 @@ export default function PackageSearch({ setContext }) {
 
 
   useEffect(() => {
-    // גלול לקומפוננטת התוצאות כאשר searchResult מתעדכן
     if (searchResult && resultRef.current) {
       resultRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
@@ -147,16 +147,17 @@ export default function PackageSearch({ setContext }) {
             sx={{ width: '100%', mt: 2 }}
           >
             <Typography>
-              {error}
-              {/* {t("trackingNumberNotFound")} */}
-              <br />
-              {t("checkDetailsOrGoToTracking")}
-              <Link href="https://israelpost.co.il/%D7%9E%D7%A2%D7%A7%D7%91-%D7%9E%D7%A9%D7%9C%D7%95%D7%97%D7%99%D7%9D/" target="_blank" rel="noopener" sx={{ ml: 1 }}>
+              {error}&#160;
+              
+              <Link href="https://israelpost.co.il/%D7%9E%D7%A2%D7%A7%D7%91-%D7%9E%D7%A9%D7%9C%D7%95%D7%97%D7%99%D7%9D/"  target="_blank" rel="noopener" sx={{  display: 'inline-flex', alignItems: 'center', ml: 1 }}>
                 {t("goToTracking")}
+                <ArrowIcon sx={{ mr: 0.5 }} /> 
               </Link>
+             
             </Typography>
           </Alert>
-        </div>
+          </div>
+        
       ))}
     </div>
   );

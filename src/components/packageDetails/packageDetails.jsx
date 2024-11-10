@@ -16,7 +16,7 @@ export default function PackageDetails() {
     hour: '2-digit',
     minute: '2-digit',
     second: '2-digit',
-    hour12: false // This ensures a 24-hour time format
+    hour12: false 
   };
 
   return (

@@ -11,7 +11,7 @@
     "HereYouWriteTrackingTax":"כאן מקלידים מספר מעקב למשלוח",
 
     "trackingNumberNotFound": "לא הצלחנו למצוא את החבילה או המטען שחיפשת.",
-   "checkDetailsOrGoToTracking":"כדאי לבדוק שוב את הפרטים שכתבת או לנסות לעבור למעקב משלוחים.",
+   
     "goToTracking": "באתר דואר ישראל",
     "search": "חיפוש",
     "titleQuestions": "שאלות ששאלו אותנו",
@@ -34,7 +34,9 @@
     "linksAreaTitle": "קישורים חשובים",
     "linksAreaSunTitle": "שיכולים לעזור לך",
     
-    "cargoSearchLink":"מעקב משלוחים",
+    "cargoSearchLink":" מעקב משלוחים דואר ישראל",
+
+    "informationLink":"מידע נוסף",
     "questionLink":"שאלות ותשובות",
     "calculatorLink":"מחשבון מיסים",
     "tutorialLink":"מדריך להזמנות מחול",
@@ -43,7 +45,7 @@
     "contactLink":"דואר חבילות",
     "paymentConfirmation": "אישור תשלום",
     "backBtnText": " חזרה לחיפוש פריטים",
-    "errorMsg": ".ארעה שגיאה, אנא נסו מאוחר יותר",
+    "errorMsg": "לא הצלחנו למצוא את החבילה או המטען שחייפשת. כדאי לבדוק שוב את הפרטים שכתבתאו לנסות לעבור למעקב משלוחים",
     "loadingMsg": "עוד רגע ונוכל להציג לך את הנתונים",
     "appeal": "ערעור על תשלום המיסים"
     
