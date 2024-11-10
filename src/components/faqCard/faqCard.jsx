@@ -20,6 +20,7 @@ export default function FaqCard({ question, answer }) {
        expandIcon={<ExpandMoreIcon className="expand-icon" />}
         aria-controls="panel1a-content"
         id="panel1a-header"
+        sx={{ height: 60 }}
       >
         <Typography className="faq-question">{question}</Typography>
       </AccordionSummary>

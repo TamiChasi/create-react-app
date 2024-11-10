@@ -32,9 +32,9 @@ export default function PackageInfo() {
 
       <br />
       <Container className='packageInfoContainer'>
-        <Box style={{ marginBottom: '20px' }}>
+        <Box className='packageInfoBox' style={{ marginBottom: '20px' }}>
           <PackageTimeline packageData={packageData}></PackageTimeline>
-          <Divider orientation="vertical" variant="middle" flexItem sx={{ border: 1, margin: 0 }} />
+          <Divider orientation="vertical" variant="middle" flexItem sx={{ border: 1, margin: 0 }} className='verticalDevider'/>
           <PackageStatus></PackageStatus>
         </Box>
       </Container>

@@ -1,141 +1,149 @@
-import React, { useState, useRef, useEffect } from 'react';
-import { useTranslation } from 'react-i18next';
-import { Stack, TextField, Button, Box, Link, Typography } from '@mui/material';
-import Alert from '@mui/material/Alert';
-import InputAdornment from '@mui/material/InputAdornment';
-import './packageSearch.css';
+import React, { useState, useRef, useEffect, useMemo } from "react";
+import "../../assets/styles.css";
+import { useTranslation } from "react-i18next";
+import { Stack, TextField, Button, Box, Link, Typography } from "@mui/material";
+import Alert from "@mui/material/Alert";
 
-import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
+import InputAdornment from "@mui/material/InputAdornment";
+import "./packageSearch.css";
+import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
+import PackageDetails from "../packageDetails/packageDetails";
+import Loading from "../loading/loading";
+import "../../assets/styles.css";
+import useGet from "../../store/useGet";
+
 import WarningSign from '../../icons/warningSign';
 import { getPackageStatus } from '../../api/dataService';
-import PackageDetails from '../packageDetails/packageDetails';
-import { CircularProgress } from '@mui/material';
-import Loading from '../loading/loading';
 import ArrowIcon from '../../icons/arrowIcon';
 
 export default function PackageSearch({ setContext }) {
   const { t } = useTranslation();
-  const [packageNumber, setPackageNumber] = useState('');
+  const [packageNumber, setPackageNumber] = useState("");
   const [searchResult, setSearchResult] = useState(null);
-
   const [error, setError] = useState(null);
-  const [loading, setLoading] = useState(false);
-  const resultRef = useRef(null); 
+  const resultRef = useRef(null);
+  const [searchInitiated, setSearchInitiated] = useState(false);
 
-  const handleChange = (event) => {
+  const url = "/CustomspilotWeb/he/CargoSearch/api/get";
+  const token = process.env.REACT_APP_PACKAGE_STATUS_API_TOKEN;
+
+  const params = useMemo(() => {
+    return packageNumber ? { CargoSearchKey: packageNumber } : null;
+  }, [packageNumber]);
+
+  const { data, loading, refetch } = useGet(url, {
+    token,
+    params,
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
+  });
+
+  const handleInputChange = (event) => {
     setPackageNumber(event.target.value);
   };
 
-  const handleKeyPress = (event) => {
-    if (event.key === 'Enter') {
-      search();
+  const handleKeyDown = (event) => {
+    if (event.key === "Enter") {
+      event.preventDefault();
+      handleSearch();
     }
   };
 
-  const search = async () => {
-    try {
-      setLoading(true);
-      const result = await getPackageStatus(packageNumber);
-      if (result.CargoResult) {
-        setSearchResult(result);
-        setContext(result);
+  const handleSearch = () => {
+    if (packageNumber.trim()) {
+      setSearchInitiated(true);
+      setError(null);
+    }
+  };
+
+  useEffect(() => {
+    if (searchInitiated)
+      refetch(url, {
+        token,
+        params,
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      });
+
+    if (searchInitiated && data) {
+      if (data.CargoResult) {
+        setSearchResult(data);
+        setContext(data);
         setError(null);
       } else {
         setSearchResult(null);
         setContext(null);
         setError(t("trackingNumberNotFound"));
       }
-    } catch (err) {
-      setSearchResult(null);
-      setContext(null);
-      if (err.message !== 200) {
-        setError(t("errorMsg"))
-      }
-      else {
-        setError(err.message);
-      }
     }
-    finally {
-      setLoading(false);
+    if (searchResult && resultRef.current) {
+      resultRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
     }
-  };
+  }, [searchInitiated]);
 
 
   useEffect(() => {
+    // גלול לקומפוננטת התוצאות כאשר searchResult מתעדכן
     if (searchResult && resultRef.current) {
-      resultRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      resultRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
     }
-  }, [searchResult]);
-
+  }, [searchInitiated]);
 
   return (
-    <div >
-      {(!searchResult) && (
+    <div className="packageSearchContainer">
+      {!searchResult && (
         <>
-          <div id="deliveryTrackingHeader">
-            {t("shippingTrackingTitle")}
+          <div id="deliveryTrackingHeader">{t("shippingTrackingTitle")}</div>
+          <div id="subheadingShipmentTracking">
+            {t("subheadingShipmentTracking")}
           </div>
 
-          <br className='hide-on-mobile'/>
-          {!loading && (
-            <div className='textContainer'>
-              <Stack spacing={-4} >
-                <div id="subheadingShipmentTracking">
-                  {t("subheadingShipmentTracking")}
-                </div>
+          <div id="subheadingShipmentTrackingB">
+            {t("highlightedSubheadingShipmentTracking")}
+          </div>
 
-                <div id="subheadingShipmentTrackingB">
-                  {t("highlightedSubheadingShipmentTracking")}
-                </div>
-              </Stack>
-            </div>
-          )}
-          <br className='hide-on-mobile'/>
           {!loading && (
-            <Box id="BoxContainer" display="flex" justifyContent="center">
-              <Stack className='searchStackContainer'
+            <Box id="boxContainer" display="flex" justifyContent="center">
+              <Stack
                 spacing={3}
                 direction="row"
-                justifyContent="space-between"
+                justifyContent="center"
                 alignItems="center"
-                width="50%"
+                width="100% !important"
               >
-
-                <Button id="onclickSearch" variant="contained" onClick={search}>
+                <Button
+                  id="onclickSearch"
+                  variant="contained"
+                  onClick={handleSearch}
+                >
                   {t("search")}
                 </Button>
 
                 <TextField
                   id="outlined-basic"
-                  className="TexstPadding"
                   variant="outlined"
-                  placeholder={t("HereYouWriteTrackingTax")}
                   value={packageNumber}
-                  onChange={handleChange}
-                  onKeyPress={handleKeyPress}
-                  maxRows={4}
+                  placeholder={t("HereYouWriteTrackingTax")}
+                  onKeyDown={handleKeyDown}
+                  onChange={handleInputChange}
                   InputProps={{
-                    className: 'placeholderPadding',
                     startAdornment: (
                       <InputAdornment position="start">
                         <SearchOutlinedIcon />
                       </InputAdornment>
                     ),
+                    style: { textAlign: "right", backgroundColor: "white" },
                   }}
-               
+                  sx={{ direction: "rtl" }}
                 />
-
               </Stack>
-            </Box>)
-          }
+            </Box>
+          )}
         </>
       )}
-      {searchResult && (
-        <>
-          <PackageDetails />
-        </>
-      )}
-
+      {searchResult && <PackageDetails ref={resultRef} />}
       {loading ? (
         <Loading />
       ) : (error && (

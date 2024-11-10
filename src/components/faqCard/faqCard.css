@@ -1,4 +1,3 @@
-
 .faq-card {
   margin-bottom: 10px;
   border: 1px solid rgba(43, 82, 135, 0.5);
@@ -21,7 +20,7 @@
  
 
 .faq-question {
-  color:#2B5287;
+  color: #2B5287;
   font-weight: bold;
   text-align: center ;
   Font : "Rubik" !important;
@@ -39,7 +38,7 @@
 
 
 .faq-answer {
-  color:#2B5287;
+  color: #2B5287;
   text-align: right;
   Font :  "Rubik" !important;
   font-size: 16px;
@@ -47,4 +46,8 @@
   line-height: 23.43px;
 }
 
-
+@media only screen and (max-width: 600px) {
+  panel1a-header {
+    height: 60px;
+  }
+}
