@@ -27,7 +27,12 @@
     "react-i18next": "^14.1.1",
     "react-router-dom": "^6.23.1",
     "react-scripts": "^5.0.1",
-    "web-vitals": "file:packages/web-vitals-4.0.1.tgz"
+    "web-vitals": "file:packages/web-vitals-4.0.1.tgz",
+    "inflight-safe": "^1.0.2",
+    "nth-check": "^2.1.1",
+    "body-parser": "^1.20.3",
+    "postcss": "^8.4.48",
+
   },
 
   "overrides": {
@@ -45,7 +50,6 @@
     "@floating-ui/react-dom": "^2.1.0",
     "@mui/utils": "^6.0.0",
     "@pigment-css/react": "^0.0.20",
-    "@mui/material-pigment-css": "^6.0.2",
     "@babel/plugin-transform-optional-chaining":"^7.24.5",
     "form-data": "^3.0.0"
   },
